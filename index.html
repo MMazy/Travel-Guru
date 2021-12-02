@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize_v8.css">
+    <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+    <title>
+        Travel Guru
+    </title>
+</head>
+
+<body>
+    <div id="pageWrapper" class="wrapper">
+        <div id="topContainer" class="container">
+            <div class="navbar" >
+                <div class="logo-box">
+                    <a href="./index.html"><img src="imgs/TG_logo_small.png" width="60px"></a>
+                </div>
+                <nav class="nav-style">
+                    <ul id="menuItems" >
+                        
+                        <li class="nav-menu-style header-menu-link active-page">
+                            <a href="./index.html"> Home</a>
+                        </li>
+                        <li class="nav-menu-style header-menu-link"><a href="#"> Advanture</a></li>
+                        <li class="nav-menu-style header-menu-link"><a href="#"> Cruise</a></li>
+                        <li class="nav-menu-style header-menu-link"><a href="#"> Romance</a></li>
+                        <li class="nav-menu-style header-menu-link"><a href="#"> Volunteer</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+                <button id="menu-button" class="menu-button-style menu-display menu-button-mobileStyle"
+                onclick="menutoggle()">
+                    <p class="menu-button-inside">
+                        ____<br>
+                        ____<br>
+                        ____<br>
+                    </p>
+                </button>
+            <!-- navbar end -->  
+            </div>
+            <div class="center-heading-text">
+
+                <div id="heading-primery ">
+                    <h1 id="pageTitle" class="heading-primery-main"> 
+                        Travel Guru
+                    </h1>
+                    <span class="heading-primery-sub"> 
+                        
+                    </span>
+                </div>
+            </div>
+            <button id="leftBtn" class="gallery-control gallery-overlay-navigation previous button-unstyled" title="Previous item">
+                <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path></svg>
+            </button>
+            <button id="rightBtn" class="gallery-control gallery-overlay-navigation next button-unstyled" title="Next item">
+                <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path></svg>
+            </button>
+            <div id="slide-gallery-container">
+                <div class="slide active" style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_adventure.jpg');" title="Advanture"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_cruiseShip.jpg');" title="Cruise"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div>
+            </div>
+        <!-- topContainer End  -->
+        </div> 
+        
+
+
+    <!-- pageWrapper End  -->
+    </div>
+    <script src="./js/carouselScript.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+</body>
+
+</html>
