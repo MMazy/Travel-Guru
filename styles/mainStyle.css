@@ -265,17 +265,16 @@ p {
 #page_title {
   color: #005c93;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 70px;
+  font-size: 4rem;
   text-align: center;
-  padding: 40px;
+  padding: 4rem;
 }
 
 #page_description {
   font-family: "Tajawal";
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: justify;
   color: #292929;
-  padding: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }  
