@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* 
 font-family: 'Cutive Mono', monospace;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Lobster', cursive;
  */
 
 * {
@@ -42,6 +43,17 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.4rem;
+}
+
+.s1{
+  color: #f7971c;
+  margin-right: -10px;
+}
+.s2{
+  color: #005c93;
+  margin-left: -10px;
 }
 
 .navbar {
@@ -67,7 +79,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 10px;
+  padding: 8px;
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -82,13 +94,16 @@ a:visited {
   color: #005c93;
 }
 
-a:hover {
+nav ul li a:hover {
   background-color: #f7971c;
   text-decoration: underline;
   border-radius: 5px;
 }
+.active-page a{
+  text-decoration:underline overline;
+}
 
-/* Moble Menu botton and toggle menu style----------------------------------------------------- */
+/* Mobile Menu button and toggle menu style----------------------------------------------------- */
 
 #menu-button {
   border: none;
@@ -130,7 +145,101 @@ a:hover {
   margin-top: 1px;
 }
 
-/* Media for toggle menu */
+/* crousel style ------------------------------------------------------------------------------- */
+.container {
+  max-width: 1440px;
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url("../imgs/carousel_home_m.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+p {
+  color: #005c93;
+}
+
+.heading-primery {
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.heading-primery-main {
+  display: block;
+  position: absolute;
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  align-self: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primery-sub-desktop{
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.heading-primery-sub-mobile {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.center-heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 35vh;
+  text-align: center;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button-unstyled {
+  background: none;
+  border: 0px;
+  padding: 0px;
+}
+
+.gallery-overlay-navigation {
+  position: absolute;
+
+  transform: translateY(-50%);
+  top: 50%;
+
+  outline: 0;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.gallery-overlay-navigation.next {
+  right: 30px;
+}
+.gallery-overlay-navigation.previous {
+  left: 30px;
+}
+
+.gallery-control {
+  transition: all 1000ms ease-in-out;
+}
+
+.gallery-control:hover {
+  cursor: pointer;
+}
+
+
+
+/* Media for toggle menu ========================*/
 @media screen and (max-width: 800px) {
   .menu-display {
     display: block;
@@ -171,90 +280,42 @@ a:hover {
     background-color: #f7971c;
     text-decoration: underline;
   }
+
 }
 
-/* crousel style ------------------------------------------------------------------------------- */
-.container {
-  max-width: 1440px;
-  height: 95vh;
-  width: 95vw;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-image: url("../imgs/carousel_home_m.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-}
 
-p {
-  color: #005c93;
-}
-
-.heading-primery {
+/* page title style ------------------------------------------------------------------------------- */
+#page_title {
   color: #005c93;
   font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  align-self: center;
-}
-
-.heading-primery-main {
-  display: block;
-  position: absolute;
-  color: #005c93;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 10px;
-  align-self: center;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.heading-primery-sub {
-  display: block;
-}
-
-.center-heading-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 35vh;
+  font-size: 4rem;
   text-align: center;
-  border-radius: 15px;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  padding: 4rem;
 }
 
-.button-unstyled {
-  background: none;
-  border: 0px;
-  padding: 0px;
-}
+#page_description {
+  font-family: "Tajawal";
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #292929;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}  
 
-.gallery-overlay-navigation {
-  position: absolute;
+/* Media query for mobile mode================================================================ */
+@media screen and (max-width: 800px) {
+  .logo-box{
+    margin-left: -30px;
+  }
 
-  transform: translateY(-50%);
-  top: 50%;
-
-  outline: 0;
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  #menu-button{
+    margin-right: -30px;
+  }
+  .heading-primery-sub-desktop{
+      display: none;
+  }
+  .heading-primery-sub-mobile {
+        display: block;
+  }
 }
-.gallery-overlay-navigation.next {
-  right: 30px;
-}
-.gallery-overlay-navigation.previous {
-  left: 30px;
-}
-
-.gallery-control {
-  transition: all 400ms ease-in-out;
-}
-
-.gallery-control:hover {
-  cursor: pointer;
-}
+/* ====================End of Media query for mobile mode==================================== */
