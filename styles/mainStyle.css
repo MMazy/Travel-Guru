@@ -304,5 +304,6 @@ p {
   font-size: 2rem;
   color: #7e7e7e;
   text-align: center;
+  grid-area: title;
 }
 
