@@ -300,6 +300,9 @@ p {
 }
 
 .activities-title {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-size: 2rem;
+  color: #7e7e7e;
   text-align: center;
 }
 
