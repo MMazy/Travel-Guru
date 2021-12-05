@@ -275,6 +275,31 @@ p {
   font-size: 1.5rem;
   text-align: justify;
   color: #292929;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }  
+
+#page_line {
+  color: #f7971c;
+  width: 90%;
+  margin: auto;
+}
+
+#page_line hr {
+  height: 2px;
+  background-color: #F7971C;
+} 
+
+/* featured activies style  ------------------------------------------------------------------------------- */
+#featuredactivities {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.activities-title {
+  text-align: center;
+}
+
