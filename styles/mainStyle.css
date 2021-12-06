@@ -286,7 +286,7 @@ p {
 }
 
 #page_line hr {
-  height: 2px;
+  height: 4px;
   background-color: #F7971C;
 } 
 
@@ -307,3 +307,7 @@ p {
   grid-area: title;
 }
 
+.activity-description {
+  font-family: "Tajawal";
+  font-size: 1rem;
+}  
