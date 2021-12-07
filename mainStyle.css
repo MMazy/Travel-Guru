@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+/* 
+font-family: 'Cutive Mono', monospace;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: center;
+  object-fit: cover;
+  display: inline-block;
+}
+
+body {
+  background-color: #fff;
+  color: #005c93;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  line-height: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.wrapper {
+  max-width: 1440px;
+  background-color: #fff;
+  align-self: center;
+}
+
+footer {
+    background-color: #005C93;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*------ navigation bar style ------------------------------------------------------------- */
+.logo-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  border-radius: 15px;
+  font-family: "Cutive Mono", monospace;
+  background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s;
+  color: #005c93;
+}
+
+a:visited {
+  color: #005c93;
+}
+
+a:hover {
+  background-color: #f7971c;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+/* Moble Menu botton and toggle menu style----------------------------------------------------- */
+
+#menu-button {
+  border: none;
+
+  cursor: pointer;
+  transition: 0.25s;
+  z-index: 20;
+  /* ======Menu button shape========= */
+  background-color: #005c93;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menu-button-inside {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-size: 1.2em;
+  font-weight: bolder;
+  line-height: 10px;
+  color: #f7971c;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-display {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  /* background-color: #f7971c; */
+  transition: 0.25s;
+}
+
+.menu-button-mobileStyle {
+  margin-top: 1px;
+}
+
+/* Media for toggle menu */
+@media screen and (max-width: 800px) {
+  .menu-display {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    text-align: left;
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 120px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(60%);
+  }
+
+  nav ul li a {
+    cursor: pointer;
+    width: 120px;
+  }
+
+  nav ul li a:hover {
+    background-color: #f7971c;
+    cursor: pointer;
+  }
+
+  .header-menu-link:hover {
+    background-color: #f7971c;
+    text-decoration: underline;
+  }
+}
+
+/* crousel style ------------------------------------------------------------------------------- */
+.container {
+  max-width: 1440px;
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url("../imgs/carousel_home_m.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+p {
+  color: #005c93;
+}
+
+.heading-primery {
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.heading-primery-main {
+  display: block;
+  position: absolute;
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  align-self: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primery-sub {
+  display: block;
+}
+
+.center-heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 35vh;
+  text-align: center;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button-unstyled {
+  background: none;
+  border: 0px;
+  padding: 0px;
+}
+
+.gallery-overlay-navigation {
+  position: absolute;
+
+  transform: translateY(-50%);
+  top: 50%;
+
+  outline: 0;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+.gallery-overlay-navigation.next {
+  right: 30px;
+}
+.gallery-overlay-navigation.previous {
+  left: 30px;
+}
+
+.gallery-control {
+  transition: all 400ms ease-in-out;
+}
+
+.gallery-control:hover {
+  cursor: pointer;
+}
+
+
+/* page title style ------------------------------------------------------------------------------- */
+#page_title {
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+#page_description {
+  font-family: "Tajawal";
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #292929;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}  
+
+#page_line {
+  color: #f7971c;
+  width: 90%;
+  margin: auto;
+}
+
+#page_line hr {
+  height: 2px;
+  background-color: #F7971C;
+} 
+
+/* featured activies style  ------------------------------------------------------------------------------- */
+#featuredactivities {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.activities-title {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-size: 2rem;
+  color: #7e7e7e;
+  text-align: center;
+  grid-area: title;
+}
+
