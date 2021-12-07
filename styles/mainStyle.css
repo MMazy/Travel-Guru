@@ -293,9 +293,59 @@ p {
 }
 
 .activity-description {
-  font-family: "Tajawal";
+  font-family: "Tajawal", sans-serif, Arial, Helvetica;
   font-size: 1rem;
 }  
+
+/* top 5 listings section style  --------------------------------------------------------------- */
+.toplistingssection {
+  margin-top: 3rem;
+}
+
+.toplistingstitle {
+  font-family: "Cutive Mono", monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  color: #005C93;
+}  
+
+.toplistingscard {
+  width: 90%;
+  margin: auto;
+} 
+
+.toplistingscard img {
+  border-radius: 0 0 10px 10px;
+  width: 25vw;
+  height: 25vh;
+}
+
+.toplistingscard .card-body .card-title {
+  margin-top: -1.2rem; 
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  color: #7e7e7e;
+} 
+ 
+
+.toplistingscard .card-body .card-text {
+  font-family: "Tajawal", sans-serif, Arial, Helvetica;
+  font-size: 0.8rem;
+  color: #292929;
+}
+ 
+.toplistingscard .card-body a {
+  background-color: #005C93;
+  color: #f7971c;;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} 
 
 /* Media for toggle menu ======================================================*/
 @media screen and (max-width: 800px) {
@@ -365,6 +415,16 @@ p {
   #featuredactivities {
      grid-template-columns: 1fr;
   } 
+
+  .toplistingstitle {
+     font-size: 1.5rem;
+  } 
+
+  .toplistingscard img {
+     width: 100%;
+     height: auto;
+     /* max-height: 60vh; */
+  }
 }
 /* ====================End of Media query for mobile mode==================================== */
 
