@@ -246,6 +246,56 @@ p {
   cursor: pointer;
 }
 
+/* page title style ------------------------------------------------------------------------------- */
+#page_title {
+  color: #005c93;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+#page_description {
+  font-family: "Tajawal";
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #292929;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}  
+
+#page_line {
+  color: #f7971c;
+  width: 90%;
+  margin: auto;
+}
+
+#page_line hr {
+  height: 4px;
+  background-color: #F7971C;
+} 
+
+/* featured activies style  ----------------------------------------------------------------------- */
+#featuredactivities {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.activities-title {
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  font-size: 2rem;
+  color: #7e7e7e;
+  text-align: center;
+  grid-area: title;
+}
+
+.activity-description {
+  font-family: "Tajawal";
+  font-size: 1rem;
+}  
 
 /* Media for toggle menu ======================================================*/
 @media screen and (max-width: 800px) {
@@ -311,56 +361,10 @@ p {
   .heading-primery-sub-mobile {
         display: block;
   }
+
+  #featuredactivities {
+     grid-template-columns: 1fr;
+  } 
 }
 /* ====================End of Media query for mobile mode==================================== */
 
-/* page title style ------------------------------------------------------------------------------- */
-#page_title {
-  color: #005c93;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  padding: 4rem;
-}
-
-#page_description {
-  font-family: "Tajawal";
-  font-size: 1.5rem;
-  text-align: justify;
-  color: #292929;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}  
-
-#page_line {
-  color: #f7971c;
-  width: 90%;
-  margin: auto;
-}
-
-#page_line hr {
-  height: 4px;
-  background-color: #F7971C;
-} 
-
-/* featured activies style  ------------------------------------------------------------------------------- */
-#featuredactivities {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.activities-title {
-  font-family: "Roboto", sans-serif, Arial, Helvetica;
-  font-size: 2rem;
-  color: #7e7e7e;
-  text-align: center;
-  grid-area: title;
-}
-
-.activity-description {
-  font-family: "Tajawal";
-  font-size: 1rem;
-}  
