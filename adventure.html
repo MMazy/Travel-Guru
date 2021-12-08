@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/normalize_v8.css">
     <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>
         Travel Guru
     </title>
@@ -17,17 +15,17 @@
 <body>
     <div id="pageWrapper" class="wrapper">
         <div id="topContainer" class="container" style="background-image: url('./imgs/carousel_adventure.jpg');">
-            <div class="navbar" >
+            <div class="navbar">
                 <div class="logo-box">
-                  <a href="./index.html">
-                    <span class="s1">Travel</span>
-                    <img src="imgs/TG_logo_small.png" width="60px"> 
-                    <span class="s2">Guru</span>
-                  </a>
+                    <a href="./index.html">
+                        <span class="s1">Travel</span>
+                        <img src="imgs/TG_logo_small.png" width="60px">
+                        <span class="s2">Guru</span>
+                    </a>
                 </div>
                 <nav class="nav-style">
-                    <ul id="menuItems" >
-                        
+                    <ul id="menuItems">
+
                         <li class="nav-menu-style header-menu-link ">
                             <a href="./index.html"> Home</a>
                         </li>
@@ -35,40 +33,41 @@
                         <li class="nav-menu-style header-menu-link"><a href="./cruise.html"> Cruise</a></li>
                         <li class="nav-menu-style header-menu-link"><a href="./romance.html"> Romance</a></li>
                         <li class="nav-menu-style header-menu-link"><a href="./volunteer.html"> Volunteer</a></li>
-                    
+
                     </ul>
-                   
+
                 </nav>
-                <button id="menu-button" class="menu-button-style menu-display menu-button-mobileStyle"
-                onclick="menutoggle()">
+                <button id="menu-button" class="menu-button-style menu-display menu-button-mobileStyle" onclick="menutoggle()">
                     <p class="menu-button-inside">
                         ____<br>
                         ____<br>
                         ____<br>
                     </p>
                 </button>
-            <!-- navbar end -->  
+                <!-- navbar end -->
             </div>
             <div class="center-heading-text">
 
                 <div id="heading-primery ">
-                    <h1 id="pageTitle" class="heading-primery-main"> 
-                      <span id="pageTitleDesktop" class="heading-primery-sub-desktop title-display1">
-                        Adventure</span> 
-                      <span id="pageTitleMobile" class="heading-primery-sub-mobile  title-display2"> 
-                        Adventure
-                      </span>
+                    <h1 id="pageTitle" class="heading-primery-main">
+                        <span id="pageTitleDesktop" class="heading-primery-sub-desktop title-display1">
+                            Adventure</span>
+                        <span id="pageTitleMobile" class="heading-primery-sub-mobile  title-display2">
+                            Adventure
+                        </span>
                     </h1>
-                   
+
                 </div>
             </div>
             <button id="leftBtn" class="gallery-control gallery-overlay-navigation previous button-unstyled" title="Previous item">
                 <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path></svg>
+                    <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path>
+                </svg>
             </button>
             <button id="rightBtn" class="gallery-control gallery-overlay-navigation next button-unstyled" title="Next item">
                 <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path></svg>
+                    <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path>
+                </svg>
             </button>
             <div id="slide-gallery-container">
                 <!-- <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
@@ -77,81 +76,345 @@
                 <div class="slide active" style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> -->
             </div>
-        <!-- topContainer End  -->
-	</div>
-  <!-- =========================================================================================================================================== -->
-	<!-- page introduction -->
-	<div id="page_introduction">
-	  <div id="page_title">
-	    <!-- Welcome to <br> TRAVEL GURU -->
-      TRAVEL GURU  <br> Featured Adventure
-	  </div>
-	  <div id="page_description">
-	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
-	    <br><br>
-	    Our team has scowered the internet to compiled the top five attractions for you to experience on your next 
-	    vacation. Visit our featured pages below to help you pick where to create your next travel memories. 
-	    We have Adventure, where you can find thrill seeking activities from sky, water, and land. 
-	    Find your next cruise from the best activity, cruise lines, ports, destination, and helpful tips. 
-	    Share a romantic getaway and find where to experience our choice in the top five dinner, resort, 
-	    and hiking locations. Give back by findind the best place to spend your time off by volunteering for 
-	    animals, community, and land conservation. 
-	  </div>
-	  <br><br>
-	  <div id="page_line"><hr></div>
-	  <br><br>
-        </div> 
-     <!-- =============================================================================================================    -->
-     
-     <!-- featured activities -->
-	<div id="featuredactivities">
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Adventure</div>
-	    <img class="card-img-top" src="imgs/home_adventure.jpg">
-	    <div class="card-body">
-	      Like adventure? You’ll love these exilerating items we have compiled for you. 
-	      These adventures will surely have you living life on the edge. Whether you like 
-	      to try up high, deep down underwater, or dry on land, we got just what you are looking for.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Cruises</div>
-	    <img class="card-img-top" src="imgs/home_cruise.jpg">
-	    <div class="card-body">
-	      Love cruises or thinking of experiensing your first? Check out our list of the top 5 cruises 
-	      worth taking a trip on. This list is a fun collection of types of cruises to try. Or maybe you 
-	      want to experience another part of the world by sea? Check out what we put together for you.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Romantic</div>
-	    <img class="card-img-top" src="imgs/home_romance.jpg">
-	    <div class="card-body">
-	      Experience these top five places around the world to dine, rest, and hike with the person you share this 
-	      life journey with, 
-	      Here you will find some of the best places to getway with your main squeeze, Whether you both enjoy an 
-	      unreal dinning experience, an out of this world resort stay, or a  romantic hike, you’ll find just 
-	      that in with our curated list.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Volunteer</div>
-	    <img class="card-img-top" src="imgs/home_volunteer.jpg">
-	    <div class="card-body">
-	      This nine-day service trip offers you the chance to travel across the Western Highlands of Guatemala to 
-	      deliver much–needed textbooks, inaugurate brand new computer centers, and interact with students, teachers, 
-	      and families who benefit from CoEd programs! You’ll learn about Guatemalan history and culture while getting 		 to know your fellow volunteers from around the world.
-	    </div>
-	  </div>
+            <!-- topContainer End  -->
+        </div>
+        <!-- =========================================================================================================================================== -->
+        <!-- page introduction -->
+        <div id="page_introduction">
+            <div id="page_title">
+                <!-- Welcome to <br> TRAVEL GURU -->
+                TRAVEL GURU <br> Featured Adventure
+            </div>
+            <div id="page_description">
+                This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer opportunities.
+                <br><br>
+                Our team has scowered the internet to compiled the top five attractions for you to experience on your next
+                vacation. Visit our featured pages below to help you pick where to create your next travel memories.
+                We have Adventure, where you can find thrill seeking activities from sky, water, and land.
+                Find your next cruise from the best activity, cruise lines, ports, destination, and helpful tips.
+                Share a romantic getaway and find where to experience our choice in the top five dinner, resort,
+                and hiking locations. Give back by findind the best place to spend your time off by volunteering for
+                animals, community, and land conservation.
+            </div>
+            <br><br>
+            <div id="page_line">
+                <hr>
+            </div>
+            <br><br>
+        </div>
+        <!-- =============================================================================================================    -->
 
+        <!-- top 5 sections -->
+
+        <!-- TOP 5 Sky Adventure -->
+        <div class="toplistingssection">
+            <div class="toplistingstitle">
+                Top 5 Sky Adventure
+            </div>
+            <div id="page_line">
+                <hr>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/skydives.png" class="" alt=" Tandem Skydiving">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Tandem Skydiving</p>
+                            <p class="card-text">
+                                Flying above the clouds and falling through the Hawaiian skies at 120mph is an adventure you will always remember and treasure. Enjoy our regular 12,000' guaranteed tandem exits for $250, with $50 deposit paid on-line 24 hours in advance on your reservation or the guaranteed higher altitude exit at 14,000' for just $275.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/paragliding.png" class="" alt="Paragliding">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Paragliding</p>
+                            <p class="card-text">
+                                Discover the tropical habitat of Costa Rica while learning about and helping to preserve
+                                the diverse bird species in the region. Travel down the canals looking for birds on the
+                                river banks, and trek through the jungle paths looking for birds in the canopies above.
+                                Data gathered will be used to inform long-term conservation efforts along Costa Rica’s
+                                Caribbean coast.</p>
+                            <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/kitty.png" class="" alt="Kitty Hawk Hang Gliding">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Kitty Hawk Hang Gliding</p>
+                            <p class="card-text">
+                                Kitty Hawk is a top-rated Outer Banks destination best known for being the home of the Wright brothers’ first flight because the brothers conducted their famous flight experiments here. Today, there’s just something nostalgic and magical about leaping off of the dunes that these legendary brothers did to help establish the era of flight travel we enjoy today.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-africa/zimbabwe/african-wildlife-orphanage">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/wingsuit.png" class="" alt="Wingsuit Flying">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Wingsuit Flying</p>
+                            <p class="card-text">
+                                This sky sport is the most desirable one among adventure enthusiasts. It is very similar to that of a bird soaring high in the sky with its wings spread wide apart. Wingsuit flying is the sport of gliding through the air wearing a wingsuit or a birdman suit. Be warned that you’ll need 200 to 500 skydives before even attempting to wingsuit.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.biosphere-expeditions.org/volunteeringinportugal">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/sky-surfing.png" class="" alt="Sky Surfing">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Sky Surfing</p>
+                            <p class="card-text">
+                                Skysurfing is a type of skydiving in which the skydiver wears a board attached to his or her feet and performs surfing-style aerobatics during free fall. It is a 120 mph free fall that will last for over 40 seconds but will create memories that will last you a lifetime. The sky surfing school located in San Diego is one of the best and trains you so well that it is nearly effortless to lift yourself into the sky like a pro in just a matter of minutes.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-south-america/ecuador/animal-plus-spanish">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    <!-- pageWrapper End  -->
+        <!-- TOP 5 Water Adventure  -->
+        <div class="toplistingssection">
+            <div class="toplistingstitle">
+                Top 5 Water Adventure
+            </div>
+            <div id="page_line">
+                <hr>
+            </div>
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/snorking.png" class="" alt="Snorkeling with Turtles">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Snorkeling with Turtles</p>
+                            <p class="card-text">
+                              This beach offers great sand and an opportunity to relax. But best of all are the green sea turtles! These green sea turtles (honu) come close to shore to feed on the seaweed growing on the rocks. These amazing reptiles can live up to be 80 years old!
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/swimming.png" class="" alt="Shark Snorkeling with no Cage">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Shark Snorkeling with no Cage</p>
+                            <p class="card-text">
+                                Join us in the water and snorkel or freedive with sharks without a cage! Take a unique guided opportunity to see for yourself just how incredible these animals are. Learn from the experts, the safest, most respectful way to interact with and enjoy sharing the water with these incredible animals.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/diving.png" class="" alt="Cavern Diving">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Cavern Diving</p>
+                            <p class="card-text">
+                                We start the list with the cavern diving. To do this activity, you must use scuba equipment, often in specialised configurations.  Its dangerous side resides that in  an emergency, a diver cannot swim vertically to the surface due to the cave’s ceilings, requiring the diver to have sufficient breathing gas to make the journey. 
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-africa/zimbabwe/african-wildlife-orphanage">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/wakeboard.png" class="" alt="Wakeboarding">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Wakeboarding</p>
+                            <p class="card-text">
+                                We continue the list with another amazing and extreme sport: wakeboarding. This sport involves being towed behind a powerboat at high speeds while your feet are strapped to a wakeboard (like the snowboard). If you’re an adrenaline seeker, you’ll enjoy the combination of speed and tricks like big air jumps and flips that you can perform in this sport.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.biosphere-expeditions.org/volunteeringinportugal">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/surfing.png" class="" alt="Surfing">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Surfing</p>
+                            <p class="card-text">
+                                In the third position, we have surf. This one is one of the most difficult watersports because it requires many years of training and a really good shape. Once you’ve accomplished enough to surf some big waves, the adrenaline increases and you want more and more regardless all the risks.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-south-america/ecuador/animal-plus-spanish">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- TOP 5 Land Adventure -->
+        <div class="toplistingssection">
+            <div class="toplistingstitle">
+                Top 5 Land Adventure
+            </div>
+            <div id="page_line">
+                <hr>
+            </div>
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/zipline.png" class="" alt="Full Ziplining">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Full Ziplining</p>
+                            <p class="card-text">
+                              Our Ultimate Adventure Park, near Ko'Olina Hotels and the Disney Aulani Resort, features ziplines ranging from 300 to 900 feet! Come zip with us from platform to platform through a 35 acre forested crater. This is a perfect tour for those looking to experience a safe, adrenaline pumping, high flying experience while flying through the trees. 
+                            </p>
+                   s         <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="img-fluid" src="imgs/Atv.png" class="" alt="ATV Off-Roading">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">ATV Off-Roading</p>
+                            <p class="card-text">
+                                Kick up dust and put the pedal to the metal through our variety of technical course and smooth speed runs. Learn some basic 4x4 techniques from our skilled guides and have a blast navigating our off‐road course. These ATV dune buggies are powerful speed machines so get ready for a thrilling ride filled with bank turns, hill climbs, and speedy straight aways. 
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/rock-climing.png" class="" alt="Rock Climbing">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Rock Climbing</p>
+                            <p class="card-text">
+                                rock climbing are a great outdoor activity choice for adventure seekers. Your guide will take care of everything for you; from setting up ropes, knots, staff belay and fun climbing. Let your sense of adventure take over. Experience the thrill and climb real rock walls! No previous experience necessary. 
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-africa/zimbabwe/african-wildlife-orphanage">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/snowbording.png" class="" alt="Snowboarding">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Snowboarding</p>
+                            <p class="card-text">
+                                Alaska. Let’s face it, it is the ultimate destination. Whether you’re journeying in a Winnebago, About Schmidt style, hanging underneath a paramotor or simply making the pilgrimage to snowboarding’s Mecca, there’s few riders who’d honestly say ‘no thanks’ to the offer of a once-in-a-lifetime to the last frontier.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.biosphere-expeditions.org/volunteeringinportugal">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toplistingscard card border-0 mb-4">
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-4">
+                        <img class=" img-fluid" src="imgs/ski.png" class="" alt="Skiing">
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-body">
+                            <p class="card-title">Skiing</p>
+                            <p class="card-text">
+                                Starting from the summit of Aiguille du Midi, off-piste skiers make the 20 kilometers and 2,800 vertical meter descent through the picture-perfect valley and back to Chamonix. Along the way, you’ll cross powder-covered glaciers, enjoy views of some of the area’s most iconic mountains and enjoy the type of adrenaline rush that can only be achieved when racing down pristine powder-filled slopes.
+                            </p>
+                            <a class="btn position-absolute bottom-0" href="https://www.goeco.org/area/volunteer-in-south-america/ecuador/animal-plus-spanish">
+                                More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pageWrapper End  -->
     </div>
     <!-- <script src="./js/carouselScript.js"></script> -->
     <script src="./js/toggleMenu.js"></script>
 </body>
 
 </html>
-
-    <!-- Shara sending pull request  -->
+<!-- Shara sending pull request  -->
