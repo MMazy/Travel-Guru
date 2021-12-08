@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* 
 font-family: 'Cutive Mono', monospace;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Lobster', cursive;
  */
-
 * {
   margin: 0;
   padding: 0;
@@ -50,12 +50,28 @@ footer {
   position: absolute;
   top: 20px;
   left: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.4rem;
+}
+
+.logo-box a{
+  text-decoration: none;
+}
+
+.s1{
+  color: #f7971c;
+  left:50px
+  /* margin-righkt: -10px; */
+}
+.s2{
+  color: #005c93;
+  /* margin-left: -10px; */
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   position: relative;
 }
 
@@ -75,9 +91,13 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.3em;
   font-weight: bold;
+}
+
+nav ul li a{
+  text-decoration: none;
 }
 
 a {
@@ -90,10 +110,13 @@ a:visited {
   color: #005c93;
 }
 
-a:hover {
+nav ul li a:hover {
   background-color: #f7971c;
   text-decoration: underline;
   border-radius: 5px;
+}
+.active-page a{
+  text-decoration: underline overline;
 }
 
 /* Moble Menu botton and toggle menu style----------------------------------------------------- */
@@ -138,49 +161,6 @@ a:hover {
   margin-top: 1px;
 }
 
-/* Media for toggle menu */
-@media screen and (max-width: 800px) {
-  .menu-display {
-    display: block;
-  }
-
-  nav {
-    position: relative;
-  }
-
-  nav ul {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    text-align: left;
-    font-family: "Cutive Mono", monospace;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 120px;
-    overflow: hidden;
-    transition: max-height 0.2s ease-in;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transform: translateX(60%);
-  }
-
-  nav ul li a {
-    cursor: pointer;
-    width: 120px;
-  }
-
-  nav ul li a:hover {
-    background-color: #f7971c;
-    cursor: pointer;
-  }
-
-  .header-menu-link:hover {
-    background-color: #f7971c;
-    text-decoration: underline;
-  }
-}
-
 /* crousel style ------------------------------------------------------------------------------- */
 .container {
   max-width: 1440px;
@@ -212,17 +192,23 @@ p {
   color: #005c93;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 10px;
   align-self: center;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.heading-primery-sub {
-  display: block;
+.heading-primery-sub-desktop{
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.heading-primery-sub-mobile {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 .center-heading-text {
@@ -260,13 +246,12 @@ p {
 }
 
 .gallery-control {
-  transition: all 400ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .gallery-control:hover {
   cursor: pointer;
 }
-
 
 /* page title style ------------------------------------------------------------------------------- */
 #page_title {
@@ -293,11 +278,11 @@ p {
 }
 
 #page_line hr {
-  height: 2px;
+  height: 4px;
   background-color: #F7971C;
 } 
 
-/* featured activies style  ------------------------------------------------------------------------------- */
+/* featured activies style  ----------------------------------------------------------------------- */
 #featuredactivities {
   width: 80%;
   margin: auto;
@@ -313,4 +298,140 @@ p {
   text-align: center;
   grid-area: title;
 }
+
+.activity-description {
+  font-family: "Tajawal", sans-serif, Arial, Helvetica;
+  font-size: 1rem;
+}  
+
+/* top 5 listings section style  --------------------------------------------------------------- */
+.toplistingssection {
+  margin-top: 3rem;
+}
+
+.toplistingstitle {
+  font-family: "Cutive Mono", monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  color: #005C93;
+}  
+
+.toplistingscard {
+  width: 90%;
+  margin: auto;
+} 
+
+.toplistingscard img {
+  border-radius: 0 0 10px 10px;
+  width: 25vw;
+  height: 25vh;
+}
+
+.toplistingscard .card-body .card-title {
+  margin-top: -1.2rem; 
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  color: #7e7e7e;
+} 
+ 
+
+.toplistingscard .card-body .card-text {
+  font-family: "Tajawal", sans-serif, Arial, Helvetica;
+  font-size: 0.8rem;
+  color: #292929;
+}
+ 
+.toplistingscard .card-body a {
+  background-color: #005C93;
+  color: #f7971c;;
+  font-family: "Roboto", sans-serif, Arial, Helvetica;
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+} 
+
+/* Media for toggle menu ======================================================*/
+@media screen and (max-width: 800px) {
+  .menu-display {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    text-align: left;
+    font-family: "Cutive Mono", monospace;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 160px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(60%);
+  }
+
+  nav ul li a {
+    cursor: pointer;
+    width: 120px;
+    z-index: 100;
+  }
+
+  nav ul li a:hover {
+    background-color: #f7971c;
+    cursor: pointer;
+  }
+
+  .header-menu-link:hover {
+    background-color: #f7971c;
+    text-decoration: underline;
+  }
+
+  
+}
+
+
+/* Media query for mobile mode================================================================ */
+@media screen and (max-width: 800px) {
+  .logo-box{
+    left:10px;
+  }
+
+  #menu-button{
+    top:12px;
+    right: 10px;
+  }
+  
+  .heading-primery-sub-desktop{
+      display: none;
+  }
+  .heading-primery-sub-mobile {
+        display: block;
+  }
+
+  #featuredactivities {
+     grid-template-columns: 1fr;
+  } 
+
+  .toplistingstitle {
+     font-size: 1.5rem;
+  } 
+
+  .toplistingscard img {
+     width: 100%;
+     height: auto;
+     /* max-height: 60vh; */
+  }
+}
+/* ====================End of Media query for mobile mode==================================== */
 
