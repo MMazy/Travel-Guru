@@ -62,6 +62,7 @@
                    
                 </div>
             </div>
+			<!-- (Note: Remove this part to remove carousel and its buttons)
             <button id="leftBtn" class="gallery-control gallery-overlay-navigation previous button-unstyled" title="Previous item">
                 <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path></svg>
@@ -71,12 +72,13 @@
                 <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path></svg>
             </button>
             <div id="slide-gallery-container">
-                <!-- <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
+                 <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_adventure.jpg');" title="Adventure"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_cruiseShip.jpg');" title="Cruise"></div>
                 <div class="slide active" style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
-                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> -->
+                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> 
             </div>
+			-->
         <!-- topContainer End  -->
 	</div>
   <!-- =========================================================================================================================================== -->
@@ -84,8 +86,21 @@
 	<div id="page_introduction">
 	  <div id="page_title">
 	    <!-- Welcome to <br> TRAVEL GURU -->
-      TRAVEL GURU  <br> Featured Cruises
+      TRAVEL GURU&nbsp; <span> - Featured Cruises </span>
 	  </div>
+	   
+	  <!-- Second Navigation bar-------------------------------------------------------------------------------- -->
+	  <nav id="secondNav" class="navbar">
+			<ul id="secondNavList">
+				<li> <a href="#categories" style="color:black" > Categories  <span class="secondNavSpan">|</span></a></li>
+				<li> <a href="#cruiseLines" style="color:black">Cruise Lines  <span class="secondNavSpan">|</span></a></li>
+				<li> <a href="#departurePorts" style="color:black">Departure Ports  <span class="secondNavSpan">|</span></a></li>
+				<li> <a href="#destinations" style="color:black">Destinations  <span class="secondNavSpan">|</span></a></li>
+				<li> <a href="#tips" style="color:black">Tips </a></li>
+			</ul>
+	  </nav>
+	  <!-- -------------------------------------------------------------------------------------------------- -->
+	  
 	  <div id="page_description">
 	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
 	    <br><br>
@@ -98,15 +113,15 @@
 	    animals, community, and land conservation. 
 	  </div>
 	  <br><br>
-	  <div id="page_line"><hr></div>
+	  <!-- <div id="page_line"><hr></div> -->
         </div> 
      <!-- =============================================================================================================    -->
      
      <!-- top 5 sections -->
 
-     <!-- TOP 5 CRUISES CATEGORY -->
+     <!-- TOP 5 CRUISES CATEGORY ***********************************************************************-->
      <div class="toplistingssection">
-	  <div class="toplistingstitle">
+	  <div id="categories"class="toplistingstitle">
 	    Top 5 Cruises Categories
 	  </div>
 	  <div id="page_line"><hr></div>
@@ -137,7 +152,7 @@
 	  <div class="toplistingscard card border-0 mb-4">
   	    <div class="row g-2">
     	      <div class="col-lg-3 col-md-4">
-      	        <img class=" img-fluid" src="imgs/volunteer/animals/BirdCostaRica.png" class="
+      	        <img class=" img-fluid" src="imgs/volunteer/animals/AzoresWhales.jpeg" class="
 		     alt="Birds in Costa Rica">
     	      </div>
     	      <div class="col-lg-9 col-md-8">
@@ -148,7 +163,8 @@
 		    the diverse bird species in the region. Travel down the canals looking for birds on the 
 		    river banks, and trek through the jungle paths looking for birds in the canopies above. 
 		    Data gathered will be used to inform long-term conservation efforts along Costa Rica’s 
-		    Caribbean coast.</p>
+		    Caribbean coast.
+		</p>
 		  <a class="btn position-absolute bottom-0"
 		     href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
 		    More details</a> 
@@ -228,136 +244,45 @@
           </div>
     </div>
 
-     <!-- TOP 5 CRUISE LINES  -->
+     <!-- TOP 5 CRUISE LINES *********************************************************************** -->
      <div class="toplistingssection">
-	  <div class="toplistingstitle">
-	    Top 5 Cruises Lines
-	  </div>
-	  <div id="page_line"><hr></div>
+		<div id="cruiseLines" class="toplistingstitle">
+			Top 5 Cruise Lines
+		</div>
+		<div id="page_line"><hr></div>
+	 </div>
 
-	  <div class="toplistingscard card border-0 mb-4">
-  	    <div class="row g-2">
-    	      <div class="col-lg-3 col-md-4">
-      	        <img class="img-fluid" src="imgs/volunteer/animals/ElephantThailand.png" class="
-		     alt="Elephant in Thailand">
-    	      </div>
-    	      <div class="col-lg-9 col-md-8">
-      	        <div class="card-body">
-                  <p class="card-title">Elephants in Thailand</p>
-                  <p class="card-text">
-		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
-		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
-		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
-		    keepers) and other locals to establish alternative livelihoods. </p>
-		  <a class="btn position-absolute bottom-0" 
-		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
-		     More details</a> 
-      	        </div>
-    	      </div>
-	    </div>
-          </div>
+	  <!-- TOP 5 Departure Ports *********************************************************************** -->
+	  <div class="toplistingssection">
+		<div id="departurePorts" class="toplistingstitle">
+			Top 5 Departure Ports
+		</div>
+		<div id="page_line"><hr></div>
+	 </div>
 
+	  <!-- TOP 5 CRUISE Destinations *********************************************************************** -->
+	  <div class="toplistingssection">
+		<div id="destinations" class="toplistingstitle">
+			Top 5 Cruise Destinations
+		</div>
+		<div id="page_line"><hr></div>
+	 </div>
 
-	  <div class="toplistingscard card border-0 mb-4">
-  	    <div class="row g-2">
-    	      <div class="col-lg-3 col-md-4">
-      	        <img class=" img-fluid" src="imgs/volunteer/animals/BirdCostaRica.png" class="
-		     alt="Birds in Costa Rica">
-    	      </div>
-    	      <div class="col-lg-9 col-md-8">
-      	        <div class="card-body">
-                  <p class="card-title">Bird Research in Costa Rica</p>
-                  <p class="card-text">
-		    Discover the tropical habitat of Costa Rica while learning about and helping to preserve 
-		    the diverse bird species in the region. Travel down the canals looking for birds on the 
-		    river banks, and trek through the jungle paths looking for birds in the canopies above. 
-		    Data gathered will be used to inform long-term conservation efforts along Costa Rica’s 
-		    Caribbean coast.</p>
-		  <a class="btn position-absolute bottom-0"
-		     href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
-		    More details</a> 
-      	        </div>
-    	      </div>
-	    </div>
-          </div>
+	 <!-- TOP 5 CRUISE Tips ***********************************************************************  -->
+	 <div class="toplistingssection">
+		<div id="tips" class="toplistingstitle">
+			Top 5 Cruise Tips
+		</div>
+		<!-- <div id="page_line"><hr></div> -->
+	 </div>
+	 
 
-
-	  <div class="toplistingscard card border-0 mb-4">
-  	    <div class="row g-2">
-    	      <div class="col-lg-3 col-md-4">
-      	        <img class=" img-fluid" src="imgs/volunteer/animals/ZimbabewWildlife.png" class="
-		     alt="Zimbabwe Wild Life">
-    	      </div>
-    	      <div class="col-lg-9 col-md-8">
-      	        <div class="card-body">
-                  <p class="card-title">African Wildlife Orphanage</p>
-                  <p class="card-text">
-		    Volunteer at one of the largest and most successful wildlife sanctuary and rehabilitation 
-		    centers in Africa! Volunteers on this project work with a range of animals, from monkeys 
-		    to lions. Experience Zimbabwe's natural beauty while making a positive impact on the 
-		    delicate African ecosystem.
-		  </p>
-		  <a class="btn position-absolute bottom-0"
-		     href="https://www.goeco.org/area/volunteer-in-africa/zimbabwe/african-wildlife-orphanage">
-		    More details</a> 
-      	        </div>
-    	      </div>
-	    </div>
-          </div>
-
-	  <div class="toplistingscard card border-0 mb-4">
-  	    <div class="row g-2">
-    	      <div class="col-lg-3 col-md-4">
-      	        <img class=" img-fluid" src="imgs/volunteer/animals/AzoresWhales.jpeg" class="
-		     alt="Dolphins in Azores">
-    	      </div>
-    	      <div class="col-lg-9 col-md-8">
-      	        <div class="card-body">
-                  <p class="card-title">Dolphin Volunteering Azores</p>
-                  <p class="card-text">
-		    This turtle, dolphin & whale conservation volunteer expedition to the Azores (Portugal) 
-		    will take you to the remote and spectacular Azores Archipelago in the middle of the 
-		    Atlantic Ocean to study whales, dolphins and loggerhead turtles. You will also listen 
-		    to whale and dolphin vocalisations.
-		  </p>
-		  <a class="btn position-absolute bottom-0"
-		     href="https://www.biosphere-expeditions.org/volunteeringinportugal">
-		    More details</a> 
-      	        </div>
-    	      </div>
-	    </div>
-          </div>
-
-	  <div class="toplistingscard card border-0 mb-4">
-  	    <div class="row g-2">
-    	      <div class="col-lg-3 col-md-4">
-      	        <img class=" img-fluid" src="imgs/volunteer/animals/EcuadorWildlife.jpeg" class="
-		     alt="Wildlife in Ecuador">
-    	      </div>
-    	      <div class="col-lg-9 col-md-8">
-      	        <div class="card-body">
-                  <p class="card-title">Wild Animal Rescue Shelter/p>
-                  <p class="card-text">
-		     Volunteer for a dedicated center that rescues threatened wildlife. Experience the 
-		     Amazon rainforest and help with the rehabilitation of injured animals.  Work hands-on 
-		     with various animals under the professional care of the center. Learn about the methods 
-		     used to rehabilitate different species of animals.
-		  </p>
-		  <a class="btn position-absolute bottom-0"
-		     href="https://www.goeco.org/area/volunteer-in-south-america/ecuador/animal-plus-spanish">
-		    More details</a> 
-      	        </div>
-    	      </div>
-	    </div>
-          </div>
-    </div>
-    
     <!-- pageWrapper End  -->
     </div>
-    <!-- <script src="./js/carouselScript.js"></script> -->
+   
     <script src="./js/toggleMenu.js"></script>
 </body>
 
 </html>
 
-    <!-- Shara sending pull request  -->
+    
