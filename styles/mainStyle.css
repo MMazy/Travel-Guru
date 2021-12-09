@@ -390,8 +390,8 @@ p {
 
 .toplistingscard img {
   border-radius: 0 0 10px 10px;
-  width: 25vw;
-  height: 25vh;
+  width: auto;
+  height: 40vh;
 }
 
 .toplistingscard .card-body {
