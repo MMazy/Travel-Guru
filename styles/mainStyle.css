@@ -431,6 +431,36 @@ p {
   display: inline-block;
 }
 
+.toplistingsaccordionpanel {
+  background-color: #005C93;
+  color: #F7971C;
+  cursor: pointer;
+  font-family: "Cutive Mono", monospace;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.8rem;
+  transition: 0.4s;
+}
+
+.toplistingsaccordionpanel::after {
+  content: "\25BE";
+  float: right;
+}
+
+.active, .toplistingsaccordionpanel:hover {
+  background-color:white;
+}
+
+.toplistingsaccordioncontent {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
 /* Media for toggle menu ======================================================*/
 @media screen and (max-width: 800px) {
   .menu-display {
