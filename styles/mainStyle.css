@@ -49,14 +49,14 @@ html {
 footer {
   background-color: #005c93;
   color: #ffffff;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-size:16px;
   text-align: center;
-
-  /* new codes */
-  /* padding: 10px;
+  
+  padding: 10px;
   margin-top: 20px;
   margin-left: 50px;
-  margin-right: 50px; */
+  margin-right: 50px; 
 }
 
 /*------ navigation bar style ------------------------------------------------------------- */
