@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /* 
 font-family: 'Cutive Mono', monospace;
 font-family: 'Josefin Sans', sans-serif;
@@ -39,38 +41,37 @@ body {
 }
 
 footer {
-    background-color: #005C93;
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 12px;
-    text-align: center;
+  background-color: #005c93;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+
+  /* new codes */
+  /* padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px; */
 }
 
-.footer-container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding-left: 25px; 
-    padding-right: 25px;
-}
 /*------ navigation bar style ------------------------------------------------------------- */
 .logo-box {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 1.4rem;
 }
 
-.logo-box a{
+.logo-box a {
   text-decoration: none;
 }
 
-.s1{
+.s1 {
   color: #f7971c;
-  left:50px
+  left: 50px;
   /* margin-righkt: -10px; */
 }
-.s2{
+.s2 {
   color: #005c93;
   /* margin-left: -10px; */
 }
@@ -78,6 +79,7 @@ footer {
 .navbar {
   display: flex;
   align-items: center;
+  flex-direction: row;
   padding: 10px;
   position: relative;
 }
@@ -93,7 +95,6 @@ nav ul {
   border-radius: 15px;
   font-family: "Cutive Mono", monospace;
   background-color: rgba(255, 255, 255, 0.6);
-
 }
 
 nav ul li {
@@ -103,17 +104,13 @@ nav ul li {
   font-weight: bold;
 }
 
-nav ul li a{
-  text-decoration: none;
-}
-
-a {
+nav ul li a {
   text-decoration: none;
   transition: 0.25s;
   color: #005c93;
 }
 
-a:visited {
+nav ul li a:visited {
   color: #005c93;
 }
 
@@ -122,7 +119,7 @@ nav ul li a:hover {
   text-decoration: underline;
   border-radius: 5px;
 }
-.active-page a{
+.active-page a {
   text-decoration: underline overline;
 }
 
@@ -205,7 +202,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.heading-primery-sub-desktop{
+.heading-primery-sub-desktop {
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 10px;
@@ -269,6 +266,10 @@ p {
   padding: 4rem;
 }
 
+#page_title span {
+  font-family: "Cutive Mono", monospace;
+}
+
 #page_description {
   font-family: "Tajawal";
   font-size: 1.5rem;
@@ -276,7 +277,7 @@ p {
   color: #292929;
   margin-left: 3rem;
   margin-right: 3rem;
-}  
+}
 
 #page_line {
   color: #f7971c;
@@ -286,8 +287,61 @@ p {
 
 #page_line hr {
   height: 4px;
-  background-color: #F7971C;
-} 
+  background-color: #f7971c;
+}
+
+/* Second Navigation styel -------------------------------------------------------------------------*/
+
+#secondNavList {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 100;
+  align-self: center;
+}
+
+#secondNav {
+  display: flex;
+  max-width: 1440px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+#secondNavList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#secondNavList ul li {
+  padding-right: 50px;
+}
+
+#secondNavList ul li a {
+  cursor: pointer;
+  color: black;
+  transition: 0.25s;
+  text-decoration: none;
+}
+
+#secondNavList ul li a:visited {
+  color: black;
+}
+
+#secondNavList ul li a:hover {
+  color: #f7971c;
+  text-decoration: underline;
+}
+
+#secondNavList span {
+  color: #f7971c;
+}
+
+.secondNavSpan {
+  padding-left: 20px;
+}
 
 /* featured activies style  ----------------------------------------------------------------------- */
 #featuredactivities {
@@ -309,7 +363,7 @@ p {
 .activity-description {
   font-family: "Tajawal", sans-serif, Arial, Helvetica;
   font-size: 1rem;
-}  
+}
 
 /* top 5 listings section style  --------------------------------------------------------------- */
 .toplistingssection {
@@ -322,13 +376,13 @@ p {
   text-align: center;
   width: 90%;
   margin: auto;
-  color: #005C93;
-}  
+  color: #005c93;
+}
 
 .toplistingscard {
   width: 90%;
   margin: auto;
-} 
+}
 
 .toplistingscard img {
   border-radius: 0 0 10px 10px;
@@ -337,29 +391,28 @@ p {
 }
 
 .toplistingscard .card-body .card-title {
-  margin-top: -1.2rem; 
+  margin-top: -1.2rem;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
   color: #7e7e7e;
-} 
- 
+}
 
 .toplistingscard .card-body .card-text {
   font-family: "Tajawal", sans-serif, Arial, Helvetica;
   font-size: 0.8rem;
   color: #292929;
 }
- 
+
 .toplistingscard .card-body a {
-  background-color: #005C93;
-  color: #f7971c;;
+  background-color: #005c93;
+  color: #f7971c;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
   padding: 5px;
   font-size: 0.8rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-} 
+}
 
 /* Media for toggle menu ======================================================*/
 @media screen and (max-width: 800px) {
@@ -403,42 +456,42 @@ p {
     background-color: #f7971c;
     text-decoration: underline;
   }
-
-  
 }
-
 
 /* Media query for mobile mode================================================================ */
 @media screen and (max-width: 800px) {
-  .logo-box{
-    left:10px;
+  .logo-box {
+    left: 10px;
   }
 
-  #menu-button{
-    top:12px;
+  #menu-button {
+    top: 12px;
     right: 10px;
   }
-  
-  .heading-primery-sub-desktop{
-      display: none;
+
+  .heading-primery-sub-desktop {
+    display: none;
   }
   .heading-primery-sub-mobile {
-        display: block;
+    display: block;
   }
 
   #featuredactivities {
-     grid-template-columns: 1fr;
-  } 
+    grid-template-columns: 1fr;
+  }
 
   .toplistingstitle {
-     font-size: 1.5rem;
-  } 
+    font-size: 1.5rem;
+  }
 
   .toplistingscard img {
-     width: 100%;
-     height: auto;
-     /* max-height: 60vh; */
+    width: 100%;
+    height: auto;
+    /* max-height: 60vh; */
+  }
+
+  #secondNavList {
+    display: none;
   }
 }
 /* ====================End of Media query for mobile mode==================================== */
-
