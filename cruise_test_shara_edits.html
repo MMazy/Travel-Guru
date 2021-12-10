@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize_v8.css">
+    <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>
+        Travel Guru
+    </title>
+</head>
+
+<body>
+    <div id="pageWrapper" class="wrapper">
+        <div id="topContainer" class="container heroImage" style="background-image: url('./imgs/carousel_cruiseShip.jpg');">
+            <div class="navbar" >
+                <div class="logo-box">
+                  <a href="./index.html">
+                    <span class="s1">Travel</span>
+                    <img src="imgs/TG_logo_small.png" alt="logo" width="60px"> 
+                    <span class="s2">Guru</span>
+                  </a>
+                </div>
+                <nav class="nav-style">
+                    <ul id="menuItems" >
+                        
+                        <li class="nav-menu-style header-menu-link ">
+                            <a href="./index.html"> Home</a>
+                        </li>
+                        <li class="nav-menu-style header-menu-link"><a href="./adventure.html"> Adventure</a></li>
+                        <li class="nav-menu-style header-menu-link active-page"><a href="./cruise.html"> Cruise</a></li>
+                        <li class="nav-menu-style header-menu-link "><a href="./romance.html"> Romance</a></li>
+                        <li class="nav-menu-style header-menu-link"><a href="./volunteer.html"> Volunteer</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+                <button id="menu-button" class="menu-button-style menu-display menu-button-mobileStyle"
+                onclick="menutoggle()">
+                    <p class="menu-button-inside">
+                        ____<br>
+                        ____<br>
+                        ____<br>
+                    </p>
+                </button>
+            <!-- navbar end -->  
+            </div>
+            <div class="center-heading-text">
+
+                <div id="heading-primery ">
+                    <h1 id="pageTitle" class="heading-primery-main"> 
+                      <span id="pageTitleDesktop" class="heading-primery-sub-desktop title-display1">
+                        Cruise</span> 
+                      <span id="pageTitleMobile" class="heading-primery-sub-mobile  title-display2"> 
+                        Cruise
+                      </span>
+                    </h1>
+                   
+                </div>
+            </div>
+           
+            <div id="slide-gallery-container">
+                <!-- <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_adventure.jpg');" title="Adventure"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_cruiseShip.jpg');" title="Cruise"></div>
+                <div class="slide active" style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
+                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> -->
+            </div>
+        <!-- topContainer End  -->
+	</div>
+  <!-- =========================================================================================================================================== -->
+	<!-- page introduction -->
+	<div id="page_introduction">
+	  <div id="page_title">
+	    <!-- Welcome to <br> TRAVEL GURU -->
+      TRAVEL GURU  <br> Featured Cruises
+	  </div>
+	  <div id="page_description">
+	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
+	    <br><br>
+	    Our team has scowered the internet to compiled the top five attractions for you to experience on your next 
+	    vacation. Visit our featured pages below to help you pick where to create your next travel memories. 
+	    We have Adventure, where you can find thrill seeking activities from sky, water, and land. 
+	    Find your next cruise from the best activity, cruise lines, ports, destination, and helpful tips. 
+	    Share a romantic getaway and find where to experience our choice in the top five dinner, resort, 
+	    and hiking locations. Give back by findind the best place to spend your time off by volunteering for 
+	    animals, community, and land conservation. 
+	  </div>
+	  <br><br>
+<!--	  <div class="page_line"><hr></div>-->
+        </div> 
+     <!-- =============================================================================================================    -->
+     
+     <!-- top 5 sections -->
+
+     <!-- TOP 5 CRUISES CATEGORY -->
+     <div class="toplistingssection">
+	  <div class="toplistingstitle">
+	    Top 5 Cruises Categories
+	  </div>
+	  <div class="page_line"><hr></div>
+
+		 
+     <div class="toplistingscard card mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel1" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel1" data-slide-to="1"></li>
+            <li data-target="#Carousel1" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+   </div>
+
+	
+
+	     <div class="toplistingscard card mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel2" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel2" data-slide-to="1"></li>
+            <li data-target="#Carousel2" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+
+		
+	     <div class="toplistingscard card  mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel3" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel3" data-slide-to="1"></li>
+            <li data-target="#Carousel3" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+	
+     <div class="toplistingscard card mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel4" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel4" data-slide-to="1"></li>
+            <li data-target="#Carousel4" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel4" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel4" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+	
+	     <div class="toplistingscard card  mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel5" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel5" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel5" data-slide-to="1"></li>
+            <li data-target="#Carousel5" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel5" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel5" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+ <br>
+<br>
+ 
+
+     <!-- TOP 5 CRUISE LINES  -->
+     <div class="toplistingssection">
+	  <div class="toplistingstitle">
+	    Top 5 Cruise Lines
+	  </div>
+	  <div class="page_line"><hr></div>
+       </div>
+		 
+     <div class="toplistingscard card  mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel11" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel11" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel11" data-slide-to="1"></li>
+            <li data-target="#Carousel11" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel11" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel11" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+  
+
+	
+
+	     <div class="toplistingscard card  mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel12" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel12" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel12" data-slide-to="1"></li>
+            <li data-target="#Carousel12" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel12" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel12" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+
+		
+	     <div class="toplistingscard card mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel13" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel13" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel13" data-slide-to="1"></li>
+            <li data-target="#Carousel13" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel13" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel13" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+	
+     <div class="toplistingscard card mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel14" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel14" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel14" data-slide-to="1"></li>
+            <li data-target="#Carousel14" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel14" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel14" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+	
+	     <div class="toplistingscard card  mb-4">
+  	    <div class="row g-2">
+		 <div class="col-md-5">
+    	     <div id="Carousel15" class="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel15" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel15" data-slide-to="1"></li>
+            <li data-target="#Carousel15" data-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=855" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="https://picsum.photos/450/300?image=355" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#Carousel15" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#Carousel15" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+				 </div>		  	  
+          </div>
+     
+    	      </div>
+    	      <div class="col-md-7 px-3">
+      	        <div class="card-body px-6">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+		    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from 
+		    working in the tourism industry. Assist with monitoring the elephants’ behaviour as 
+		    they are reintegrated into the forests and work alongside mahouts (traditional elephant 
+		    keepers) and other locals to establish alternative livelihoods. </p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+		     Learn More</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+
+ <br>
+<br>
+		
+		
+    <!-- pageWrapper End  -->
+  </div>
+    <!-- <script src="./js/carouselScript.js"></script> -->
+    <script src="./js/toggleMenu.js"></script>
+
+</body>
+
+</html>
+
+
