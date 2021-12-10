@@ -12,6 +12,13 @@
     <title>
         Travel Guru
     </title>
+	<style>
+		.card img{
+			border-radius: 15px;
+			margin-top: 10px;
+			width: 100%;
+		  }
+	</style>
 </head>
 
 <body>
@@ -21,7 +28,7 @@
                 <div class="logo-box">
                   <a href="./index.html">
                     <span class="s1">Travel</span>
-                    <img src="imgs/TG_logo_small.png" > 
+                    <img src="imgs/TG_logo_small.png"> 
                     <span class="s2">Guru</span>
                   </a>
                 </div>
@@ -33,7 +40,7 @@
                         </li>
                         <li class="nav-menu-style header-menu-link"><a href="./adventure.html"> Adventure</a></li>
                         <li class="nav-menu-style header-menu-link"><a href="./cruise.html"> Cruise</a></li>
-                        <li class="nav-menu-style header-menu-link"><a href="./romance.html"> Romance</a></li>
+                        <li class="nav-menu-style header-menu-link "><a href="./romance.html"> Romance</a></li>
                         <li class="nav-menu-style header-menu-link active-page"><a href="./volunteer.html"> Volunteer</a></li>
                     
                     </ul>
@@ -62,6 +69,7 @@
                    
                 </div>
             </div>
+			<!-- (Note: Remove this part to remove carousel and its buttons)
             <button id="leftBtn" class="gallery-control gallery-overlay-navigation previous button-unstyled" title="Previous item">
                 <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path></svg>
@@ -71,12 +79,13 @@
                 <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path></svg>
             </button>
             <div id="slide-gallery-container">
-                <!-- <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
+                 <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_adventure.jpg');" title="Adventure"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_cruiseShip.jpg');" title="Cruise"></div>
                 <div class="slide active" style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
-                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> -->
+                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> 
             </div>
+			-->
         <!-- topContainer End  -->
 	</div>
   <!-- =========================================================================================================================================== -->
@@ -84,78 +93,583 @@
 	<div id="page_introduction">
 	  <div id="page_title">
 	    <!-- Welcome to <br> TRAVEL GURU -->
-      TRAVEL GURU  <br> Featured Volunteer
+      TRAVEL GURU&nbsp; <span> - Featured Volunteer </span>
 	  </div>
+	   
+	  <!-- Second Navigation bar-------------------------------------------------------------------------------- -->
+	  <nav id="secondNav" class="navbar">
+			<ul id="secondNavList" >
+				<li> <a href="#animals" style="color:black" > 
+					Animals</a>  <span class="secondNavSpan">|</span></li>
+				<li> <a href="#education" style="color:black">
+					Education</a>  <span class="secondNavSpan">|</span></li>
+				<li> <a href="#land" style="color:black">
+					Land</a>  <span class="secondNavSpan">|</span></li>
+				<li> <a href="#community" style="color:black">
+					Community</a> 
+			</ul>
+	  </nav>
+	  <!-- -------------------------------------------------------------------------------------------------- -->
+	  
 	  <div id="page_description">
-	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
-	    <br><br>
-	    Our team has scowered the internet to compiled the top five attractions for you to experience on your next 
-	    vacation. Visit our featured pages below to help you pick where to create your next travel memories. 
-	    We have Adventure, where you can find thrill seeking activities from sky, water, and land. 
-	    Find your next cruise from the best activity, cruise lines, ports, destination, and helpful tips. 
-	    Share a romantic getaway and find where to experience our choice in the top five dinner, resort, 
-	    and hiking locations. Give back by findind the best place to spend your time off by volunteering for 
-	    animals, community, and land conservation. 
+	    
+	    As with almost any travel decision, the best cruise is always the cruise that is best for you.
+		 Would you prefer to sail up Norway's fjords or to play the turquoise waters of the 
+		 Mediterranean? Is your family interested in a themed cruise frequented by Disney characters,
+		  or do you and your partner want an intimate, romantic river trip? Would you rather pack a tux
+		   or a sturdy pair of hiking books? With an expanding variety of journeys as well as 
+		   destinations, even the skeptical are likely to find something here that will pique 
+		   their interest. 
+
 	  </div>
 	  <br><br>
-	  <div id="page_line"><hr></div>
-	  <br><br>
+	  <!-- <div id="page_line"><hr></div> -->
         </div> 
      <!-- =============================================================================================================    -->
      
-     <!-- featured activities -->
-	<div id="featuredactivities">
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Adventure</div>
-	    <img class="card-img-top" src="imgs/home_adventure.jpg">
-	    <div class="card-body">
-	      Like adventure? You’ll love these exilerating items we have compiled for you. 
-	      These adventures will surely have you living life on the edge. Whether you like 
-	      to try up high, deep down underwater, or dry on land, we got just what you are looking for.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Cruises</div>
-	    <img class="card-img-top" src="imgs/home_cruise.jpg">
-	    <div class="card-body">
-	      Love cruises or thinking of experiensing your first? Check out our list of the top 5 cruises 
-	      worth taking a trip on. This list is a fun collection of types of cruises to try. Or maybe you 
-	      want to experience another part of the world by sea? Check out what we put together for you.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Romantic</div>
-	    <img class="card-img-top" src="imgs/home_romance.jpg">
-	    <div class="card-body">
-	      Experience these top five places around the world to dine, rest, and hike with the person you share this 
-	      life journey with, 
-	      Here you will find some of the best places to getway with your main squeeze, Whether you both enjoy an 
-	      unreal dinning experience, an out of this world resort stay, or a  romantic hike, you’ll find just 
-	      that in with our curated list.
-	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Volunteer</div>
-	    <img class="card-img-top" src="imgs/home_volunteer.jpg">
-	    <div class="card-body">
-	      This nine-day service trip offers you the chance to travel across the Western Highlands of Guatemala to 
-	      deliver much–needed textbooks, inaugurate brand new computer centers, and interact with students, teachers, 
-	      and families who benefit from CoEd programs! You’ll learn about Guatemalan history and culture while getting 		 to know your fellow volunteers from around the world.
-	    </div>
-	  </div>
+     <!-- top 5 sections -->
 
-        </div>
+     <!-- TOP 5 ANIMALS CATEGORY ***********************************************************************-->
+     <button class="toplistingsaccordionpanel">Top 5 Animals</button>
+     <div class="toplistingsaccordioncontent toplistingssection">
+	  <div id="animals" class="toplistingstitle">
+	    Top 5 Animals
+	  </div>
+	  <div id="page_line"><hr></div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/animals/ElephantThailand.png" class="
+                     alt="Elephant in Thailand">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Elephants in Thailand</p>
+                  <p class="card-text">
+                    Travel to Thailand’s Chiang Mai Province and volunteer with elephants relieved from
+                    working in the tourism industry. Assist with monitoring the elephants’ behaviour as
+                    they are reintegrated into the forests and work alongside mahouts (traditional elephant
+                    keepers) and other locals to establish alternative livelihoods. </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.gviusa.com/programs/volunteer-elephants-thailand/">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class=" img-fluid" src="imgs/volunteer/animals/BirdCostaRica.png" class="
+                     alt="Birds in Costa Rica">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Bird Research in Costa Rica</p>
+                  <p class="card-text">
+                    Discover the tropical habitat of Costa Rica while learning about and helping to preserve 
+                    the diverse bird species in the region. Travel down the canals looking for birds on the
+                    river banks, and trek through the jungle paths looking for birds in the canopies above.
+                    Data gathered will be used to inform long-term conservation efforts along Costa Rica’s
+                    Caribbean coast.</p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.gviusa.com/programs/bird-research-in-costa-rica/">
+                    More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class=" img-fluid" src="imgs/volunteer/animals/ZimbabewWildlife.png" class="
+                     alt="Zimbabwe Wild Life">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">African Wildlife Orphanage</p>
+                  <p class="card-text">
+                    Volunteer at one of the largest and most successful wildlife sanctuary and rehabilitation
+                    centers in Africa! Volunteers on this project work with a range of animals, from monkeys 
+                    to lions. Experience Zimbabwe's natural beauty while making a positive impact on the
+                    delicate African ecosystem.
+                  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.goeco.org/area/volunteer-in-africa/zimbabwe/african-wildlife-orphanage">
+                    More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class=" img-fluid" src="imgs/volunteer/animals/AzoresWhales.jpeg" class="
+                     alt="Dolphins in Azores">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Dolphin Volunteering Azores</p>
+                  <p class="card-text">
+                    This turtle, dolphin & whale conservation volunteer expedition to the Azores (Portugal)
+                    will take you to the remote and spectacular Azores Archipelago in the middle of the
+                    Atlantic Ocean to study whales, dolphins and loggerhead turtles. You will also listen
+                    to whale and dolphin vocalisations.
+                  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.biosphere-expeditions.org/volunteeringinportugal">
+                    More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class=" img-fluid" src="imgs/volunteer/animals/EcuadorWildlife.jpeg" class="
+                     alt="Wildlife in Ecuador">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Wild Animal Rescue Shelter</p>
+                  <p class="card-text">
+                     Volunteer for a dedicated center that rescues threatened wildlife. Experience the
+                     Amazon rainforest and help with the rehabilitation of injured animals.  Work hands-on
+                     with various animals under the professional care of the center. Learn about the methods 
+                     used to rehabilitate different species of animals.
+                  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.goeco.org/area/volunteer-in-south-america/ecuador/animal-plus-spanish">
+                    More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+     <!-- TOP 5 EDUCATION ***********************************************************************-->
+     <button class="toplistingsaccordionpanel">Top 5 Education</button>
+     <div class="toplistingsaccordioncontent toplistingssection">
+	  <div id="education" class="toplistingstitle">
+	    Top 5 Education 
+	  </div>
+	  <div id="page_line"><hr></div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/education/VolunteerCambodia.png" 
+                     alt="Education in Cambodia">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Teach children in Cambodia</p>
+                  <p class="card-text">
+		    Experience true cultural immersion in Cambodia while you contribute to the 
+		    social development of the children from the community of Siem Reap. Participants 
+		    will be involved in projects focusing on teaching English, environmental 
+		    awareness, arts and crafts, health and exercise. 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.gviusa.com/programs/volunteer-with-children-in-cambodia/">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/education/VolunteerCostaRica.png"
+                     alt="English teaching in Costa Rica">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Teaching English in Costa Rica/p>
+                  <p class="card-text">
+		    Teach English, learn Spanish, and explore the Costa Rican town of Cimarrones. 
+		    Contribute to the United Nations Sustainable Development Goal UN SDG, #4, 
+		    Quality Education and, in your free time, spot unique species in the nearby 
+		    mountain areas or enjoy exploring one of the nearby volcano national parks.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.gviusa.com/programs/volunteer-teach-english-costa-rica/">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/education/EducationNepal.png" 
+                     alt="Teaching English in Nepal">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Teach English in Nepal</p>
+                  <p class="card-text">
+		    Dedicated students from isolated rural villages will journey to you to 
+		    be taught English. These determined children come from your village 
+		    and neighboring villages. They range in age from about four years old 
+		    to 18. Villages in the Annapurna Region tend to have high populations 
+		    of Gurung and Magar people, a just two of the many subcultures of Nepal.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.trektoteach.org/teach.html">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/education/EducationGuatemala.png" 
+                     alt="Guatemala Literacy Tour">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Guatemala Literacy Project Tour</p>
+                  <p class="card-text">
+		    This nine-day service trip offers you the chance to travel across the 
+		    Western Highlands of Guatemala to deliver much–needed textbooks, inaugurate 
+		    brand new computer centers, and interact with students, teachers, and 
+		    families who benefit from CoEd programs! You’ll learn about Guatemalan 
+		    history and culture while getting to know your fellow volunteers 
+		    from around the world.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://coeduc.org/tours/glp/">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/education/EducationPortugal.jpeg" 
+                     alt="Teach in Portugal">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Teach in Portugal</p>
+                  <p class="card-text">
+		    Being a part of the Youth Support Program in Portugal, you will 
+		    be able to assist different non-profit organizations in supporting 
+		    children in need by giving them the opportunity to experience extracurricular 
+		    activities and helping them to discover and following their dreams. If you 
+		    are keen to travel and volunteer abroad in the post-covid times and serve 
+		    society by doing something worthy, and help the community for sustainable 
+		    growth, then this is your chance.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.volunteeringsolutions.com/volunteer-in-portugal/youth-support-program">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+	 
+     <!-- TOP 5 Land ***********************************************************************-->
+     <button class="toplistingsaccordionpanel">Top 5 Land</button>
+     <div class="toplistingsaccordioncontent toplistingssection">
+	  <div id="land" class="toplistingstitle">
+	    Top 5 Land
+	  </div>
+	  <div id="page_line"><hr></div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/land/Molokai.jpeg" 
+                     alt="Molokai Hawaii ">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Land Conservation in Molokai</p>
+                  <p class="card-text">
+		    The island of Molokai is described as "the most Hawaiian island." Indeed, 
+		    it has been subject to less development than other islands, with a strong 
+		    coterie of residents who prefer to keep their island rural. Land conservation 
+		    and cultural preservation efforts by private landowners, local 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://content.sierraclub.org/outings/restoring-native-species-service-beauty-molokai-hawaii#trip=22084A">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/land/LostCoast.jpeg" 
+                     alt="Lost Coast, California">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Preserving the Lost Coast, California</p>
+                  <p class="card-text">
+		    On the northern shore of California stretches the legendary Lost Coast, 
+		    where the 4,000-foot King Range rises precipitously above the wild Pacific. 
+		    This dramatic meeting of land and sea is one of the longest segments 
+		    of undeveloped coastline in the continental United States.
+
+		    We will be camping and working on lands traditionally used by Mattole 
+		    and Sinkyone tribes for thousands of years.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://content.sierraclub.org/outings/preserving-lost-coast-california#trip=22097A">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/land/NewYork.jpeg"
+                     alt="New York City Park">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">New York City Park Service</p>
+                  <p class="card-text">
+		    For many years, the Sierra Club has assisted in important work projects 
+		    that have a profound effect on the New York City community. We plan to 
+		    work four days and have two and a half days for extensive sightseeing within 
+		    the City. After work, the evenings will be free to enjoy the attractions of 
+		    this great City. Also planned are talks sponsored by the Conservancy on 
+		    conservation-related issues as they apply to New York City. This trip is 
+		    family friendly -- children are welcome. 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://content.sierraclub.org/outings/new-york-city-park-service-trip-new-york#trip=22098A">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/land/Denali.jpeg"
+                     alt="Denali, Alaska">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Denali National Park and Preserve </p>
+                  <p class="card-text">
+		    Home to Mount Denali, the highest mountain in North America, 
+		    Denali National Park and Preserve comprises a massive area of 
+		    six million acres -- the park is slightly larger than the entire 
+		    state of Massachusetts. Forests cover the lower elevations and 
+		    slowly merge into tundra, which in turn rises to meet the snowcapped 
+		    peaks and flowing glaciers of the Alaska Range. 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://content.sierraclub.org/outings/trail-repair-denali-national-park-alaska#trip=22026A">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/land/Colorado.jpeg" 
+                     alt="Colorado ">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">50-Plus Service in Rocky Mountain National Park, Colorado</p>
+                  <p class="card-text">
+		    Are you 50 or over? Do you care about the environment? Do you like to 
+		    volunteer? If so, then this is the trip for you! We will do trail work 
+		    and conservation projects in this iconic area. We will work four days 
+		    and have a day off to explore the area.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://content.sierraclub.org/outings/service-rocky-mountain-national-park-colorado#trip=22326A">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+     <!-- TOP 5 COMMUNITY CATEGORY ***********************************************************************-->
+     <button class="toplistingsaccordionpanel">Top 5 Community</button>
+     <div class="toplistingsaccordioncontent toplistingssection">
+	  <div id="community" class="toplistingstitle">
+	    Top 5 Community
+	  </div>
+	  <div id="page_line"><hr></div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/community/ChildcareSpain.jpeg"
+                     alt="Child care Spain">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Childcare in Social Welfare Program Spain</p>
+                  <p class="card-text">
+		    The Childcare Volunteering Project in Valencia is facilitated to 
+		    assist children from underserved backgrounds, and work entails tutoring 
+		    them after school hours in a community center. Volunteers can also assist 
+		    the local staff in day-to-day administrative tasks as well. The project 
+		    lets participants understand the workings of a local care shelter and 
+		    its role in taking of the local community. Working at the project is 
+		    also a good way to work on one’s Spanish skills. 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.volunteeringsolutions.com/spain/childcare-volunteer-program">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/community/FoodWaste.jpeg" 
+                     alt="Food waste management">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Food Waste Management</p>
+                  <p class="card-text">
+		    If you are keen to volunteer for a social cause and help several hungry 
+		    people to have a stomach-full meal, then join us and contribute towards 
+		    the cause of reducing food waste in Porto. As a part of this program, 
+		    you will actively contribute to fighting food waste and hunger in a 
+		    structured system that feeds over 3000 people every day. You will help 
+		    the local teams collecting, organizing and distributing the food excess 
+		    from restaurants and cafés to fight food waste in the city. 
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.volunteeringsolutions.com/portugal/food-waste-management-volunteering">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/community/Murals.jpeg"
+                     alt="Murals Project">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Teach Art or Paint Murals Project</p>
+                  <p class="card-text">
+		    Do have a knack for art? If you are an experienced artist who's keen on 
+		    sharing the knowledge of art with the local youth of the region or interested 
+		    in taking art classes in schools, then the Teach Art or Paint Murals Project 
+		    would be a perfect choice for you. Apart from taking art classes, you 
+		    can also get engaged in diverse community restoration projects, helping 
+		    paint murals and hoses in the favela.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.volunteeringsolutions.com/brazil/teach-art-paint-murals-project">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/community/UrbanGarden.jpeg"
+                     alt="Urban Garden Brazil">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Urban Gardening Volunteering</p>
+                  <p class="card-text">
+		    This project seriously focuses on the goal of providing the residents 
+		    of two of Rio de Janeiro’s largest favela (shanty town) communities - 
+		    Manguinhos and Complexo do Alemão, with nutritious food. It aims to 
+		    teach them the skills to garden and supply fresh, healthy food for 
+		    their families and community.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.volunteeringsolutions.com/brazil/urban-gardening-volunteer-program">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toplistingscard card border-0 mb-4">
+            <div class="row g-2">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-fluid" src="imgs/volunteer/community/Cambodia.jpeg"
+                     alt="Women's Economic empowerment in Cambodia">
+              </div>
+              <div class="col-lg-9 col-md-8">
+                <div class="card-body">
+                  <p class="card-title">Women's Economic Empowerment</p>
+                  <p class="card-text">
+		    Our program focuses on promoting women's empowerment through education, 
+		    autonomy, independence, and leadership of women across Siem Reap. You will 
+		    be involved in providing English lessons to students, thereby enabling 
+		    them to reach higher education or more skilled employment in the future. 
+		    Increase the opportunities of women across Siem Reap to economically empower 
+		    themselves by improving their vocational skills, through conducting life 
+		    skills workshops which increase personal and professional development.
+		  </p>
+                  <a class="btn position-absolute bottom-0"
+                     href="https://www.gviusa.com/programs/womens-economic-empowerment-in-cambodia/">
+                     More details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+	 <footer>
+		 &copy; Team 1 | Shalabh Agarwal, Shara Escobar, Mina Mazloomi, &amp; Kevin Zhao  |  Fall 2021 Web Design &amp; Development II  |  Mission College </footer>
 
     <!-- pageWrapper End  -->
     </div>
-    <!-- <script src="./js/carouselScript.js"></script> -->
+   
     <script src="./js/toggleMenu.js"></script>
-    <script>
-      window.addEventListener("resize",setMenuItemHeight);
-      //if the window size changes then it will run the setMenuItemHeight function
-    </script>
+    <script src="./js/accordion.js"></script>
+	<script>
+		window.addEventListener("resize",setMenuItemHeight);
+		//if the window size changes then it will run the setMenuItemHeight function
+	</script>
 </body>
 
 </html>
 
-    <!-- Shara sending pull request  -->
+    
