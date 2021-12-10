@@ -1,15 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* 
 font-family: 'Cutive Mono', monospace;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Lobster', cursive;
-font-family: 'Lato', sans-serif;
  */
 * {
   margin: 0;
@@ -36,10 +32,6 @@ body {
   justify-items: center;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .wrapper {
   max-width: 1440px;
   background-color: #fff;
@@ -47,17 +39,10 @@ html {
 }
 
 footer {
-  background-color: #005c93;
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-size:16px;
-  text-align: center;
-
-  /* new codes */
-  /* padding: 10px;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px; */
+    background-color: #005C93;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
 }
 
 /*------ navigation bar style ------------------------------------------------------------- */
@@ -65,25 +50,20 @@ footer {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 1.4rem;
 }
 
-.logo-box img{
-  width: 50px;
-}
-
-.logo-box a {
+.logo-box a{
   text-decoration: none;
 }
 
-
-.s1 {
+.s1{
   color: #f7971c;
-  left: 50px;
+  left:50px
   /* margin-righkt: -10px; */
 }
-.s2 {
+.s2{
   color: #005c93;
   /* margin-left: -10px; */
 }
@@ -91,13 +71,8 @@ footer {
 .navbar {
   display: flex;
   align-items: center;
-  flex-direction: row;
   padding: 10px;
   position: relative;
-}
-
-.nav-style{
-  padding-top:20px;
 }
 
 nav {
@@ -111,26 +86,27 @@ nav ul {
   border-radius: 15px;
   font-family: "Cutive Mono", monospace;
   background-color: rgba(255, 255, 255, 0.6);
+
 }
 
 nav ul li {
   display: inline-block;
-  padding: 2.5px;
+  padding: 5px;
   font-size: 1.3em;
   font-weight: bold;
 }
 
-nav ul li:nth-child(1){
-  padding-left: 0;
+nav ul li a{
+  text-decoration: none;
 }
 
-nav ul li a {
+a {
   text-decoration: none;
   transition: 0.25s;
   color: #005c93;
 }
 
-nav ul li a:visited {
+a:visited {
   color: #005c93;
 }
 
@@ -139,7 +115,7 @@ nav ul li a:hover {
   text-decoration: underline;
   border-radius: 5px;
 }
-.active-page a {
+.active-page a{
   text-decoration: underline overline;
 }
 
@@ -188,7 +164,7 @@ nav ul li a:hover {
 /* crousel style ------------------------------------------------------------------------------- */
 .container {
   max-width: 1440px;
-  height: 95vh;
+/*  height: 95vh;*/
   width: 95vw;
   margin: auto;
   padding-left: 25px;
@@ -197,6 +173,12 @@ nav ul li a:hover {
   background-size: cover;
   background-position: top;
   position: relative;
+}
+
+.heroImage{
+	height: 85vh;
+/*	width: 100%;*/
+	
 }
 
 p {
@@ -222,7 +204,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.heading-primery-sub-desktop {
+.heading-primery-sub-desktop{
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 10px;
@@ -286,10 +268,6 @@ p {
   padding: 4rem;
 }
 
-#page_title span {
-  font-family: "Cutive Mono", monospace;
-}
-
 #page_description {
   font-family: "Tajawal";
   font-size: 1.5rem;
@@ -297,68 +275,19 @@ p {
   color: #292929;
   margin-left: 3rem;
   margin-right: 3rem;
-}
+}  
 
-#page_line {
+.page_line {
   color: #f7971c;
   width: 90%;
-  margin: auto;
+  margin:auto;
+  margin-top: -15px;
 }
 
-#page_line hr {
+.page_line hr {
   height: 4px;
-  background-color: #f7971c;
-}
-
-/* Second Navigation styel -------------------------------------------------------------------------*/
-
-#secondNavList {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  align-self: center;
-}
-
-#secondNav {
-  display: flex;
-  max-width: 1440px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: -40px;
-  margin-bottom: 50px;
-}
-
-#secondNavList {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#secondNavList ul li a {
-  cursor: pointer;
-  color: black;
-  transition: 0.25s;
-  text-decoration: none;
-}
-
-#secondNavList ul li a:visited {
-  color: black;
-}
-
-#secondNavList ul li a:hover {
-  color: #f7971c;
-  text-decoration: underline;
-}
-
-#secondNavList span {
-  color: #f7971c;
-}
-
-.secondNavSpan {
-  padding: 15px;
-}
+  background-color: #F7971C;
+} 
 
 /* featured activies style  ----------------------------------------------------------------------- */
 #featuredactivities {
@@ -380,123 +309,184 @@ p {
 .activity-description {
   font-family: "Tajawal", sans-serif, Arial, Helvetica;
   font-size: 1rem;
+}  
+/* featured activities carousel card  --------------------------------------------------------------- */
+
+/*
+body {
+  background-color:  #eee;
+}
+*/
+.py-3{
+	background-image: none;
+}
+.title {
+ 
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
-.hover-effect:hover{
-  transform: scale(1.05);
-  cursor: pointer;
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
 }
+
+.row {
+/*	padding-left: 10%; */
+}
+
+.carousel-inner {
+	height: 100%;
+	margin: auto;
+}
+
+.card {
+/*    font-size: 1em;*/
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+	align-items: center;
+}
+
+.card_title{
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;;
+	color: #7e7e7e;
+/*	font-size: 2vw;*/
+	font-size: 2.5em;
+}
+
+.card_text{
+	font-family: 'Tajawal', sans-serif;
+	color: #292929;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	lex-direction: column;
+}						
+
+.btn {
+  margin-top: auto;
+}
+
+.button {
+	background-color: #005C93;
+	color: #F7971C;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding: 10px 15px 10px 15px;
+	font-size: 16px;
+	margin-top: auto;
+	border-radius: 25px;
+}
+
+.toplistingscard .card{
+	border: none;
+} 
+
 /* top 5 listings section style  --------------------------------------------------------------- */
-
-
-.card img{
-  border-radius: 15px;
-  margin-top: 15px;
-}
-
 .toplistingssection {
   margin-top: 3rem;
 }
 
 .toplistingstitle {
   font-family: "Cutive Mono", monospace;
-  font-size: 4rem;
-  /* font-size: 2.5rem; */
+  font-size: 2.5rem;
   text-align: center;
   width: 90%;
   margin: auto;
-  color: #005c93;
-}
+  color: #005C93;
+}  
 
 .toplistingscard {
   width: 90%;
   margin: auto;
-}
+} 
 
 .toplistingscard img {
   border-radius: 0 0 10px 10px;
-  width: 25vw;
-  height: 25vh;
+  width: 35vw;
+  height: 35vh;
 }
 
-.toplistingscard .card-body {
-  margin-top: -1.2rem;
-  font-size: 1.3rem;
+.toplistingscard .card-body .card-title {
+  margin-top: -1.2rem; 
+  font-size: 2rem;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
   color: #7e7e7e;
-}
+} 
+ 
 
-.card-title {
-  /* margin-top: -1.2rem; */
-  font-size: 2.5rem;
-  font-family: "Roboto", sans-serif, Arial, Helvetica;
-  color: #7e7e7e;
-}
-
-.toplistingscard .card-body {
-  font-family: "Tajawal", sans-serif, Arial, Helvetica;
-  font-size: 0.8rem;
+.toplistingscard .card-body .card-text {
+  font-family: 	'Tajawal', sans-serif;
+  font-size: 1.1rem;
   color: #292929;
 }
-
-.card-text {
-  font-family: "Tajawal", sans-serif, Arial, Helvetica;
-  font-size: 1rem;
-  color: #292929;
-}
-
+ 
 .toplistingscard .card-body a {
-  background-color: #005c93;
+  background-color: #005C93;
   color: #f7971c;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
-  padding: 5px;
-  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 8px 15px 8px 15px;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 20px;
+} 
+
+@media screen and (max-width: 1100px) {
+.toplistingscard .card-body .card-text {
+  font-family: 	'Tajawal', sans-serif;
+  font-size: 1.6vmax;
+  color: #292929;
+}
 }
 
-.toplistingsaccordionpanel {
-  background-color: #005C93;
-  color: #F7971C;
-  cursor: pointer;
-  font-family: "Cutive Mono", monospace;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.8rem;
-  transition: 0.4s;
-}
-
-.toplistingsaccordionpanel::after {
-  content: "\25BE";
-  float: right;
-}
-
-.active, .toplistingsaccordionpanel:hover {
-  background-color:white;
-}
-
-.toplistingsaccordioncontent {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
-/* Media for toggle menu ======================================================*/
-@media screen and (max-width: 850px) {
-  .menu-display {
+/* Media query for mobile mode================================================================ */
+@media screen and (max-width: 770px) {
+/* Media for toggle menu ======================================================*/	
+.menu-display {
     display: block;
   }
 
-  .navbar nav {
+  nav {
     position: relative;
   }
 
-  .navbar nav ul {
+  nav ul {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -513,13 +503,13 @@ p {
     transform: translateX(60%);
   }
 
-  .navbar nav ul li a {
+  nav ul li a {
     cursor: pointer;
     width: 120px;
     z-index: 100;
   }
 
-  .navbar nav ul li a:hover {
+  nav ul li a:hover {
     background-color: #f7971c;
     cursor: pointer;
   }
@@ -528,60 +518,84 @@ p {
     background-color: #f7971c;
     text-decoration: underline;
   }
-}
 
-/* Media query for mobile mode================================================================ */
-@media screen and (max-width: 850px) {
-  .logo-box {
-    left: 10px;
+  
+
+/* featured activities carousel card  -------------------------------------------------- */
+.card_title{
+	font-size: 3.5vmax;
+}	
+	
+	.toplistingscard .card-body .card-text {
+		font-size: 2.5vh;
+	}
+	
+.d-block{
+	width: 100%;
+	margin: auto;
+	}
+	
+/* END featured activities carousel card  ---------------------------------------------- */
+	
+  .logo-box{
+    left:10px;
   }
 
-  #menu-button {
-    top: 12px;
+  #menu-button{
+    top:12px;
     right: 10px;
   }
-
-  .heading-primery-sub-desktop {
-    display: none;
+  
+  .heading-primery-sub-desktop{
+      display: none;
   }
   .heading-primery-sub-mobile {
-    display: block;
+        display: block;
   }
 
   #featuredactivities {
-    grid-template-columns: 1fr;
-  }
+     grid-template-columns: 1fr;
+  } 
+.toplistingscard {
+  width: 90%;
+  margin: auto;
+/*  height: 100vw;	*/
+} 
 
   .toplistingstitle {
-    font-size: 1.5rem;
-  }
+     font-size: 1.5rem;
+  } 
 
+.toplistingscard .card-body .card-text {
+     margin-bottom: 9%;
+	font-size: 2vmax;
+  } 
+	
   .toplistingscard img {
-    width: 100%;
-    height: auto;
-    /* max-height: 60vh; */
+     width: 100%;
+     height: auto;
+     /* max-height: 60vh; */
   }
+}
 
-  #secondNavList {
-    display: none;
-  }
-
-  #page_title {
-    font-size: 2.5rem;
-  }
-
-  #page_description{
-    font-size:1.3rem ;
-  }
-
-  .card-title{
-    font-size: 1.5rem;
-  }
-
-  .card img{
-    border-radius: 15px;
-    margin-top: 10px;
-  }
-
+.btn{
+	margin-top: auto;
 }
 /* ====================End of Media query for mobile mode==================================== */
+
+@media screen and (max-width: 390px) {
+  .card_title{
+	font-size: 1vw;
+}
+/*
+	.card-text {
+     font-size: 16px;
+  } 
+*/
+}
+
+@media screen and (max-height: 650px) {
+.toplistingscard .card-body .card-text {
+    font-size: 1rem;
+  }
+}
