@@ -52,11 +52,12 @@ footer {
   font-family: 'Roboto';
   font-size:16px;
   text-align: center;
-  
-  padding: 10px;
+
+  /* new codes */
+  /* padding: 10px;
   margin-top: 20px;
   margin-left: 50px;
-  margin-right: 50px; 
+  margin-right: 50px; */
 }
 
 /*------ navigation bar style ------------------------------------------------------------- */
@@ -68,9 +69,14 @@ footer {
   font-size: 1.4rem;
 }
 
+.logo-box img{
+  width: 50px;
+}
+
 .logo-box a {
   text-decoration: none;
 }
+
 
 .s1 {
   color: #f7971c;
@@ -90,6 +96,10 @@ footer {
   position: relative;
 }
 
+.nav-style{
+  padding-top:20px;
+}
+
 nav {
   flex: 1;
   text-align: right;
@@ -105,9 +115,13 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 5px;
+  padding: 2.5px;
   font-size: 1.3em;
   font-weight: bold;
+}
+
+nav ul li:nth-child(1){
+  padding-left: 0;
 }
 
 nav ul li a {
@@ -368,7 +382,18 @@ p {
   font-size: 1rem;
 }
 
+.hover-effect:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
 /* top 5 listings section style  --------------------------------------------------------------- */
+
+
+.card img{
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
 .toplistingssection {
   margin-top: 3rem;
 }
@@ -462,7 +487,7 @@ p {
 }
 
 /* Media for toggle menu ======================================================*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .menu-display {
     display: block;
   }
@@ -506,7 +531,7 @@ p {
 }
 
 /* Media query for mobile mode================================================================ */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .logo-box {
     left: 10px;
   }
@@ -540,5 +565,23 @@ p {
   #secondNavList {
     display: none;
   }
+
+  #page_title {
+    font-size: 2.5rem;
+  }
+
+  #page_description{
+    font-size:1.3rem ;
+  }
+
+  .card-title{
+    font-size: 1.5rem;
+  }
+
+  .card img{
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
 }
 /* ====================End of Media query for mobile mode==================================== */

@@ -21,7 +21,7 @@
                 <div class="logo-box">
                   <a href="./index.html">
                     <span class="s1">Travel</span>
-                    <img src="imgs/TG_logo_small.png" width="60px"> 
+                    <img src="imgs/TG_logo_small.png"> 
                     <span class="s2">Guru</span>
                   </a>
                 </div>
@@ -86,7 +86,8 @@
 	    Welcome to <br> TRAVEL GURU
 	  </div>
 	  <div id="page_description">
-	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
+	    This is the place to find the top 5 places to travel when it comes to 
+      Adventure, Cruise, Romance, or Volunteer opportunities.
 	    <br><br>
 	    Our team has scowered the internet to compiled the top five attractions for you to experience on your next 
 	    vacation. Visit our featured pages below to help you pick where to create your next travel memories. 
@@ -107,7 +108,7 @@
 	  <div class="card border-0">
 	    <div class="card-title activities-title">Featured Adventure</div>
       <a href="./adventure.html">
-	      <img class="card-img-top" style="border-radius: 15px;" src="./imgs/home_adventure.jpg">
+	      <img class="card-img-top hover-effect" style="border-radius: 15px;" src="./imgs/home_adventure.jpg">
       </a>
 	    <div class="card-body activity-description">
 	      Like adventure? You’ll love these exilerating items we have compiled for you. 
@@ -118,7 +119,7 @@
 	  <div class="card border-0">
 	    <div class="card-title activities-title">Featured Cruises</div>
       <a href="./cruise.html">
-	      <img class="card-img-top" style="border-radius: 15px;" src="./imgs/home_cruise.jpg">
+	      <img class="card-img-top hover-effect" style="border-radius: 15px;" src="./imgs/home_cruise.jpg">
       </a>
 	    <div class="card-body activity-description">
 	      Love cruises or thinking of experiensing your first? Check out our list of the top 5 cruises 
@@ -129,7 +130,7 @@
 	  <div class="card border-0">
 	    <div class="card-title activities-title">Featured Romantic</div>
       <a href="./romance.html">
-	      <img class="card-img-top" style="border-radius: 15px;" src="./imgs/home_romance.jpg">
+	      <img class="card-img-top hover-effect" style="border-radius: 15px;" src="./imgs/home_romance.jpg">
       </a>
 	    <div class="card-body activity-description">
 	      Experience these top five places around the world to dine, rest, and hike with the person you share this 
@@ -142,7 +143,7 @@
 	  <div class="card border-0">
 	    <div class="card-title activities-title">Featured Volunteer</div>
       <a href="./volunteer.html">
-	      <img class="card-img-top" style="border-radius: 15px;" src="./imgs/home_volunteer.jpg">
+	      <img class="card-img-top hover-effect" style="border-radius: 15px;" src="./imgs/home_volunteer.jpg">
       </a>
 	    <div class="card-body activity-description">
 	      This nine-day service trip offers you the chance to travel across the Western Highlands of Guatemala to 
@@ -158,6 +159,10 @@
         <!--    <footer>&copy; Team 1 | Shalabh Agarwal, Shara Escobar, Mina Mazloomi, &amp; Kevin Zhao  |  Fall 2021 Web Design &amp; Development II  |  Mission College </footer>-->
     <script src="./js/carouselScript.js"></script>
     <script src="./js/toggleMenu.js"></script>
+    <script>
+      window.addEventListener("resize",setMenuItemHeight);
+      //if the window size changes then it will run the setMenuItemHeight function
+    </script>
 </body>
 
 </html>

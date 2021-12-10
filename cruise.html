@@ -12,6 +12,13 @@
     <title>
         Travel Guru
     </title>
+	<style>
+		.card img{
+			border-radius: 15px;
+			margin-top: 10px;
+			width: 100%;
+		  }
+	</style>
 </head>
 
 <body>
@@ -21,7 +28,7 @@
                 <div class="logo-box">
                   <a href="./index.html">
                     <span class="s1">Travel</span>
-                    <img src="imgs/TG_logo_small.png" width="60px"> 
+                    <img src="imgs/TG_logo_small.png"> 
                     <span class="s2">Guru</span>
                   </a>
                 </div>
@@ -810,6 +817,10 @@
    
     <script src="./js/toggleMenu.js"></script>
     <script src="./js/accordion.js"></script>
+	<script>
+		window.addEventListener("resize",setMenuItemHeight);
+		//if the window size changes then it will run the setMenuItemHeight function
+	</script>
 </body>
 
 </html>
