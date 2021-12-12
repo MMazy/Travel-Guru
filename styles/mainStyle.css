@@ -720,5 +720,10 @@ p {
 	#footer {
     font-size: .8em;
 }
+	
+		#menuItems{
+		font-size: .8em;
+	}
+
 /* ====================End of Media query for mobile mode==================================== */
 }
