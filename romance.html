@@ -12,6 +12,13 @@
     <title>
         Travel Guru
     </title>
+	<style>
+		.card img{
+			border-radius: 15px;
+			margin-top: 10px;
+			width: 100%;
+		  }
+	</style>
 </head>
 
 <body>
@@ -32,7 +39,7 @@
                             <a href="./index.html"> Home</a>
                         </li>
                         <li class="nav-menu-style header-menu-link"><a href="./adventure.html"> Adventure</a></li>
-                        <li class="nav-menu-style header-menu-link"><a href="./cruise.html"> Cruise</a></li>
+                        <li class="nav-menu-style header-menu-link "><a href="./cruise.html"> Cruise</a></li>
                         <li class="nav-menu-style header-menu-link active-page"><a href="./romance.html"> Romance</a></li>
                         <li class="nav-menu-style header-menu-link"><a href="./volunteer.html"> Volunteer</a></li>
                     
@@ -62,6 +69,7 @@
                    
                 </div>
             </div>
+			<!-- (Note: Remove this part to remove carousel and its buttons)
             <button id="leftBtn" class="gallery-control gallery-overlay-navigation previous button-unstyled" title="Previous item">
                 <svg width="22" height="42" viewBox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.615 21L21.708 1.907c.39-.39.39-1.023 0-1.413-.394-.393-1.024-.39-1.414 0l-19.8 19.8C.297 20.49.2 20.744.2 21c0 .257.098.51.293.706l19.8 19.8c.39.39 1.024.39 1.414 0 .393-.393.39-1.023 0-1.413L2.616 21z" fill-rule="evenodd"></path></svg>
@@ -71,12 +79,13 @@
                 <path d="M19.385 21L.292 40.093c-.39.39-.39 1.023 0 1.413.394.393 1.024.39 1.414 0l19.8-19.8c.196-.195.293-.45.293-.705 0-.257-.098-.51-.293-.706L1.707.494C1.316.103.682.103.292.493c-.393.393-.39 1.023 0 1.413L19.384 21z" fill-rule="evenodd"></path></svg>
             </button>
             <div id="slide-gallery-container">
-                <!-- <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
+                 <div class="slide " style="background-image: url('./imgs/carousel_home_m.jpg');" title="Travel guru"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_adventure.jpg');" title="Adventure"></div>
                 <div class="slide " style="background-image: url('./imgs/carousel_cruiseShip.jpg');" title="Cruise"></div>
                 <div class="slide active" style="background-image: url('./imgs/carousel_romance.jpeg');" title="Romance"></div>
-                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> -->
+                <div class="slide " style="background-image: url('./imgs/carousel_Volunteer_CostaRica.jpg');" title="Volunteer"></div> 
             </div>
+			-->
         <!-- topContainer End  -->
 	</div>
   <!-- =========================================================================================================================================== -->
@@ -84,78 +93,418 @@
 	<div id="page_introduction">
 	  <div id="page_title">
 	    <!-- Welcome to <br> TRAVEL GURU -->
-      TRAVEL GURU  <br> Featured Romance
+		  TRAVEL GURU&nbsp; <span id="dash"> - </span> <br id="break"> <span>Featured Romance </span>
 	  </div>
+	   
+	  <!-- Second Navigation bar-------------------------------------------------------------------------------- -->
+	  <nav id="secondNav" class="navbar">
+			<ul id="secondNavList" >
+				<li> <a href="#dinners" style="color:black" > 
+					Dinners   </a>  <span class="secondNavSpan">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </span></li>
+				<li> <a href="#resorts" style="color:black">
+					Resorts  </a>  <span class="secondNavSpan">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span></li>
+				<li> <a href="#hikes" style="color:black">
+					Hikes </a>  <span class="secondNavSpan"></span></li>
+			</ul>
+	  </nav>
+	  <!-- -------------------------------------------------------------------------------------------------- -->
+	  
 	  <div id="page_description">
-	    This is the place to find the top 5 places to travel when it comes to Adventure, Cruise, Romance, or Volunteer 		  opportunities.
-	    <br><br>
-	    Our team has scowered the internet to compiled the top five attractions for you to experience on your next 
-	    vacation. Visit our featured pages below to help you pick where to create your next travel memories. 
-	    We have Adventure, where you can find thrill seeking activities from sky, water, and land. 
-	    Find your next cruise from the best activity, cruise lines, ports, destination, and helpful tips. 
-	    Share a romantic getaway and find where to experience our choice in the top five dinner, resort, 
-	    and hiking locations. Give back by findind the best place to spend your time off by volunteering for 
-	    animals, community, and land conservation. 
+	    
+	    As with almost any travel decision, the best cruise is always the cruise that is best for you.
+		 Would you prefer to sail up Norway's fjords or to play the turquoise waters of the 
+		 Mediterranean? Is your family interested in a themed cruise frequented by Disney characters,
+		  or do you and your partner want an intimate, romantic river trip? Would you rather pack a tux
+		   or a sturdy pair of hiking books? With an expanding variety of journeys as well as 
+		   destinations, even the skeptical are likely to find something here that will pique 
+		   their interest. 
+
 	  </div>
 	  <br><br>
-	  <div id="page_line"><hr></div>
-	  <br><br>
+	  <!-- <div class="page_line"><hr></div> -->
         </div> 
      <!-- =============================================================================================================    -->
      
-     <!-- featured activities -->
-	<div id="featuredactivities">
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Adventure</div>
-	    <img class="card-img-top" src="imgs/home_adventure.jpg">
-	    <div class="card-body">
-	      Like adventure? You’ll love these exilerating items we have compiled for you. 
-	      These adventures will surely have you living life on the edge. Whether you like 
-	      to try up high, deep down underwater, or dry on land, we got just what you are looking for.
-	    </div>
+     <!-- top 5 sections -->
+
+     <!-- TOP 5 Dinners ***********************************************************************-->
+     <button class="toplistingsaccordionpanel">Top 5 Dinners</button>
+     <div class="toplistingssection toplistingsaccordioncontent">
+	  <div id="dinners" class="toplistingstitle">
+	    Top 5 Dinners
 	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Cruises</div>
-	    <img class="card-img-top" src="imgs/home_cruise.jpg">
-	    <div class="card-body">
-	      Love cruises or thinking of experiensing your first? Check out our list of the top 5 cruises 
-	      worth taking a trip on. This list is a fun collection of types of cruises to try. Or maybe you 
-	      want to experience another part of the world by sea? Check out what we put together for you.
+	  <div class="page_line"><hr></div>
+
+	  <div class="toplistingscard card border-0 mb-4">
+  	    <div class="row g-2">
+    	      <div class="col-lg-3 col-md-4">
+      	        <img class="img-fluid cradImg" src="./imgs/romance/dinners/samabe-cave.jpg" 
+		    	 alt="Samabe Cave Dinner">
+    	      </div>
+    	      <div class="col-lg-9 col-md-8">
+      	        <div class="card-body">
+                <p class="card-title">Secret Cave Dining  </p>
+                <p class="card-text">
+					Experience a very unique and romantic dinner at the Samabe Bali Suites & Villas.  Imagine your own secret hideaway in a cave next to the ocean.  Enjoy a five course special romantic menu, with your own dedicated chef and staff, as you are serenaded by the crashing waves.
+				</p>
+		  <a class="btn position-absolute bottom-0" 
+		     href="https://www.samabe.com/en/restaurant/private-cave-and-beach-events.php">
+		     More details</a> 
+      	        </div>
+    	      </div>
 	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Romantic</div>
-	    <img class="card-img-top" src="imgs/home_romance.jpg">
-	    <div class="card-body">
-	      Experience these top five places around the world to dine, rest, and hike with the person you share this 
-	      life journey with, 
-	      Here you will find some of the best places to getway with your main squeeze, Whether you both enjoy an 
-	      unreal dinning experience, an out of this world resort stay, or a  romantic hike, you’ll find just 
-	      that in with our curated list.
+          </div>
+
+
+	  <div class="toplistingscard card border-0 mb-4">
+  	    <div class="row g-2">
+    	      <div class="col-lg-3 col-md-4">
+      	        <img class=" img-fluid" src="./imgs/romance/dinners/turtle-island.jpg" 
+		     alt="Turtle Island Dinner">
+    	      </div>
+    	      <div class="col-lg-9 col-md-8">
+      	        <div class="card-body">
+                  <p class="card-title">Pontoon Dining</p>
+                  <p class="card-text">
+					During your stay at the fabulous Turtle Island in Fiji, your personal concierge will arrange a private dinner on the floating pontoon in the famous Blue Lagoon.  Your boatman will deliver you by candle light to the pontoon, where you’ll be served an intimate dinner accompanied by a bottle of bubbly. 		</p>
+		  <a class="btn position-absolute bottom-0"
+		     href="https://www.turtlefiji.com/cuisine/intimate-dine-outs/">
+		    More details</a> 
+      	        </div>
+    	      </div>
 	    </div>
-	  </div>
-	  <div class="card">
-	    <div class="card-title activities-title">Featured Volunteer</div>
-	    <img class="card-img-top" src="imgs/home_volunteer.jpg">
-	    <div class="card-body">
-	      This nine-day service trip offers you the chance to travel across the Western Highlands of Guatemala to 
-	      deliver much–needed textbooks, inaugurate brand new computer centers, and interact with students, teachers, 
-	      and families who benefit from CoEd programs! You’ll learn about Guatemalan history and culture while getting 		 to know your fellow volunteers from around the world.
+          </div>
+
+
+	  <div class="toplistingscard card border-0 mb-4">
+  	    <div class="row g-2">
+    	      <div class="col-lg-3 col-md-4">
+      	        <img class=" img-fluid" src="./imgs/romance/dinners/treehouse_dinner.jpg" 
+		     alt="Treehouse Dinner">
+    	      </div>
+    	      <div class="col-lg-9 col-md-8">
+      	        <div class="card-body">
+                    <p class="card-title">Treehouse Dining</p>
+ 					<p class="card-text">
+						On a secure and lavish platform where the stars are impossible to count, this treehouse has all the luxurious comforts, but begets an experience as wild as the animals that roam beneath it at Lion Sands Game Preserve.  You’ll be escorted to the treehouse at sunset, where drinks and a scrumptious picnic dinner await.
+		  			</p>
+		  <a class="btn position-absolute bottom-0"
+		     href="https://www.sabi-sands.com/treehouse-safari-lion-sands-south-africa.php">
+		    More details</a> 
+      	        </div>
+    	      </div>
 	    </div>
+          </div>
+
+	  <div class="toplistingscard card border-0 mb-4">
+  	    <div class="row g-2">
+    	      <div class="col-lg-3 col-md-4">
+      	        <img class=" img-fluid" src="./imgs/romance/dinners/velassaru-island.jpg" 
+		     alt="Sand Castle Dinner">
+    	      </div>
+    	      <div class="col-lg-9 col-md-8">
+      	        <div class="card-body">
+                  <p class="card-title">Sand Castle Dining</p>
+                  <p class="card-text">
+					Your dinner on Velassaru Island in the Maldives will be a truly memorable experience.  Your private banquet is dug into the sugary sands of the South Male Atoll. Romantic candles and torches set the mood for romance.
+
+		  </p>
+		  <a class="btn position-absolute bottom-0"
+		     href="https://www.velassaru.com/velassaru-indulgence">
+		    More details</a> 
+      	        </div>
+    	      </div>
+	    </div>
+          </div>
+
+	  	<div class="toplistingscard card border-0 mb-4">
+  	    	<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/dinners/sponda-amalfi.jpg" 
+					alt="Amalfi Coast Dinner">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Amalfi Coast Dining</p>
+						<p class="card-text">
+							At dinner, Michelin starred La Sponda restaurant in Positano at Le Sirenuse is lit by four hundred candles that create an unforgettable atmosphere.  Your view of the Amalfi Coast will be spectacular.  That, combined with the award winning Mediterranean cuisine will create a memory you’ll cherish for a lifetime.
+						</p>
+						<a class="btn position-absolute bottom-0"
+							href="https://sirenuse.it/en/la-sponda-restaurant/">
+							More details
+						</a> 
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<!-- Categories end -->
+    </div> 
+
+     <!-- TOP 5 Resorts *********************************************************************** -->
+     <button class="toplistingsaccordionpanel">Top 5 Resorts</button>
+     <div class="toplistingssection toplistingsaccordioncontent">
+		<div id="resorts" class="toplistingstitle">
+			Top 5 Resorts
+		</div>
+		<div class="page_line"><hr></div>
+	
+		
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+			  <div class="col-lg-3 col-md-4">
+				  <img class=" img-fluid" src="./imgs/romance/resorts/ladera.png" 
+				  alt="Ladera Resort">
+			  </div>
+			  <div class="col-lg-9 col-md-8">
+				  <div class="card-body">
+					  <p class="card-title">Ladera</p>
+					  <p class="card-text">
+						This island retreat stands out for its open-walled rooms — all the better for taking in panoramic vistas of the stunning Caribbean scenery — which still feel private, thanks to ’s mountainside location.
+
+					  </p>
+					  <a class="btn position-absolute bottom-0"
+						  href="https://www.ladera.com/?gclid=CjwKCAiAksyNBhAPEiwAlDBeLJnuWuERxX7Y2cjtTxcA3rdrG2Ku2lQoNXhydS3cKhiLWOAf1YDUKxoCKE8QAvD_BwE&gclsrc=aw.ds">
+						  More details
+					  </a> 
+				  </div>
+			  </div>
+		  </div>
 	  </div>
 
+
+	  	<div class="toplistingscard card border-0 mb-4">
+  	    	<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/resorts/belmond.jpg" 
+					alt="Belmond Resort">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Belmond Castello di Casole</p>
+						<p class="card-text">
+							Spread across 4,200 acres of Tuscan countryside,  centers around a 10th-century castle, carefully restored to highlight antique touches, including wood-beam ceilings and Etruscan artifacts found on-site. Among the more unique activities for outdoor enthusiasts: on-site truffle hunting.
+						</p>
+						<a class="btn position-absolute bottom-0"
+							href="https://www.belmond.com/hotels/europe/italy/tuscany/belmond-castello-di-casole/">
+							More details
+						</a> 
+					</div>
+				</div>
+			</div>
         </div>
+
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+			  <div class="col-lg-3 col-md-4">
+				  <img class=" img-fluid" src="./imgs/romance/resorts/amandari.jpg" 
+				  alt="Amandari Resort">
+			  </div>
+			  <div class="col-lg-9 col-md-8">
+				  <div class="card-body">
+					  <p class="card-title">Amandari</p>
+					  <p class="card-text">
+						Though not far from Ubud’s city center, the luxe  transports guests light years away from civilization with its perch on the hills above the Ayung River gorge. Suites mimic local village houses in their design and provide total seclusion for peace-seeking couples who want to enjoy traditional Balinese culture.
+
+
+					  </p>
+					  <a class="btn position-absolute bottom-0"
+						  href="https://www.aman.com/resorts/amandari?utm_source=Google&utm_medium=Yext&y_source=1_MTU3MDc0MDEtNzE1LWxvY2F0aW9uLmdvb2dsZV93ZWJzaXRlX292ZXJyaWRl">
+						  More details
+					  </a> 
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+
+
+
+	  <div class="toplistingscard card border-0 mb-4">
+		<div class="row g-2">
+		  <div class="col-lg-3 col-md-4">
+			  <img class=" img-fluid" src="./imgs/romance/resorts/surf_sand.jpg" 
+			  alt="Surf & Sand Resort">
+		  </div>
+		  <div class="col-lg-9 col-md-8">
+			  <div class="card-body">
+				  <p class="card-title">Surf & Sand</p>
+				  <p class="card-text">
+					The Mediterranean-leaning in Laguna Beach captures the laid-back elegance for which the Orange County town is famed. The oceanfront pool and adjacency to Bluebird Beach make it popular among couples who want quick access to water sports.
+
+				  </p>
+				  <a class="btn position-absolute bottom-0"
+					  href="https://www.surfandsandresort.com/">
+					  More details
+				  </a> 
+			  </div>
+		  </div>
+	  </div>
+  </div>
+
+<div class="toplistingscard card border-0 mb-4">
+	<div class="row g-2">
+		<div class="col-lg-3 col-md-4">
+			<img class=" img-fluid" src="./imgs/romance/resorts/calistoga_ranch.jpg" 
+			alt="Calistoga Ranch Resort">
+		</div>
+		<div class="col-lg-9 col-md-8">
+			<div class="card-body">
+				<p class="card-title">Calistoga Ranch, an Auberge</p>
+				<p class="card-text">
+					Nature enthusiasts flock to this idyllic hideaway, where 50 rustic luxury cottages dot 157 acres filled with oak trees and trickling streams. Couples can find rejuvenation at  however they define it, whether that’s zip-lining through redwoods, biking through vineyards, or practicing alfresco yoga.
+				</p>
+				<a class="btn position-absolute bottom-0" 
+				href="https://aubergeresorts.com/calistogaranch/">
+					More details
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	 </div>
+
+	  <!-- TOP 5 Hikes *********************************************************************** -->
+          <button class="toplistingsaccordionpanel">Top 5 Hikes</button>
+	  <div class="toplistingssection toplistingsaccordioncontent">
+		<div id="hikes" class="toplistingstitle">
+			Top 5 Hikes
+		</div>
+		<div class="page_line"><hr></div>
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/hikes/krn.jpg" 
+					alt="Krn Mountain">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Krn Mountain</p>
+						<p class="card-text">
+							For those adventurous types searching for a place no friend of theirs has experienced is quite hard, but that's where Slovenia comes in. This unexplored Krn Mountain is located in the Julian Alps and one of its peaks hits more than 7,000 feet. It is a place that needs to be visited as it is so romantic and magical. 
+						</p>
+						<a class="btn position-absolute bottom-0" 
+						href="https://besthiking.net/krn-trail-gps-hiking-the-alps/">
+							More details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/hikes/queen.jpg" 
+					alt="The Queen Charlotte Track">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">The Queen Charlotte Track</p>
+						<p class="card-text">
+							There are so many different places on those sixteen acres of vineyards and gardens at The Marlborough Lodge that you can romantically wander together, but what makes it so special is the excursion to the Queen Charlotte Track. For safety reasons, it is guided, but there you will be able to hike around the magical forest with native ferns and foliage all while learning about  Maori history.
+						</p>
+						<a class="btn position-absolute bottom-0" 
+						href="https://www.wildernessguidesnz.com/queen-charlotte-track-walks/All-Queen-Charlotte-Track-Walks/">
+							More details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/hikes/arkaba.jpg" 
+					alt="Arkaba Walk">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Arkaba Walk</p>
+						<p class="card-text">
+							If you are someone who likes to take cool romantic pictures of their hikes, one of the most Instagrammable places you can go to is the Arkaba Walk. It is just a couple of hours from Adelaide and it is full of gorges, wild animals as well as cool Aboriginal rock art. A popular thing to do there is sleeping under the stars and waking up to a magical sunrise.
+
+
+						</p>
+						<a class="btn position-absolute bottom-0" 
+						href="https://greatwalksofaustralia.com.au/our-walks/arkaba-walk/">
+							More details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/hikes/koko.jpg" 
+					alt="Koko Crater Trail">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Koko Crater Trail</p>
+						<p class="card-text">
+							Rather than going on a popular hike that everyone chooses to do, choose the Koko Crater Trail that is also very close to Waikiki Beach. It is great for advanced hikes, and there will be a romantic view waiting for you on the top of an extinct volcano.
+						</p>
+						<a class="btn position-absolute bottom-0" 
+						href="https://www.alltrails.com/trail/hawaii/oahu/koko-head-crater-trail?u=i">
+							More details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toplistingscard card border-0 mb-4">
+			<div class="row g-2">
+				<div class="col-lg-3 col-md-4">
+					<img class=" img-fluid" src="./imgs/romance/hikes/fira.jpg" 
+					alt="Fira to Oia Trail">
+				</div>
+				<div class="col-lg-9 col-md-8">
+					<div class="card-body">
+						<p class="card-title">Fira to Oia</p>
+						<p class="card-text">
+							Even though everyone knows that Santorini is one of the top romantic places you can go, it is simply with it. It has some of the best hikes like the one from Fira to Oia. It is an approximately six-mile hike where you will be able to experience an amazing sunset viewpoint, reinvigorating swimming pools as well as amazing historical sites along the way.
+						</p>
+						<a class="btn position-absolute bottom-0" 
+						href="https://www.earthtrekkers.com/hike-fira-to-oia-or-oia-to-fira-santorini/">
+							More details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+	 </div>
+
+	  
+			
+			
+	 
+	 <footer id="footer">
+		 &copy; Team 1 | Shalabh Agarwal, Shara Escobar, Mina Mazloomi, &amp; Kevin Zhao  |  Fall 2021 Web Design &amp; Development II  |  Mission College </footer>
 
     <!-- pageWrapper End  -->
     </div>
-    <!-- <script src="./js/carouselScript.js"></script> -->
+   
     <script src="./js/toggleMenu.js"></script>
-    <script>
-      window.addEventListener("resize",setMenuItemHeight);
-      //if the window size changes then it will run the setMenuItemHeight function
-    </script>
+    <script src="./js/accordion.js"></script>
+	<script>
+		window.addEventListener("resize",setMenuItemHeight);
+		//if the window size changes then it will run the setMenuItemHeight function
+	</script>
 </body>
 
 </html>
 
-    <!-- Shara sending pull request  -->
+    
