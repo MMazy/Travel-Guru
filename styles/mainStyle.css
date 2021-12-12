@@ -46,12 +46,13 @@ html {
   align-self: center;
 }
 
-footer {
+#footer {
   background-color: #005c93;
   color: #ffffff;
   font-family: 'Roboto';
-  font-size:16px;
+  font-size: 1.5vmin;
   text-align: center;
+  padding: 8px 5px;
 
   /* new codes */
   /* padding: 10px;
@@ -134,14 +135,41 @@ nav ul li a:visited {
   color: #005c93;
 }
 
-nav ul li a:hover {
-  background-color: #f7971c;
-  text-decoration: underline;
+.nav-style a:hover {
+  background-color: rgba(0,0,0,0.00);
+  text-decoration: none;
   border-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  border-bottom-color: #f7971c;
+  width: fit-content;
 }
-.active-page a {
-  text-decoration: underline overline;
+
+#secondNavList a:hover {
+  background-color: rgba(0,0,0,0.00);
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  border-bottom-color: #005c93;
+  width: fit-content;
 }
+
+.active-page  a {
+  border-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  border-bottom-color: #f7971c;
+  width: fit-content;
+  	
+}
+
+.nav-menu-style {
+  padding: 10px 0px;
+  margin: 0px 15px;
+  position: relative;
+}
+
 
 /* Moble Menu botton and toggle menu style----------------------------------------------------- */
 
@@ -244,7 +272,7 @@ p {
   text-align: center;
   border-radius: 15px;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .button-unstyled {
@@ -297,24 +325,26 @@ p {
   color: #292929;
   margin-left: 3rem;
   margin-right: 3rem;
+  padding: 0 10% 0 10%;
 }
 
-#page_line {
+.page_line {
   color: #f7971c;
   width: 90%;
   margin: auto;
 }
 
-#page_line hr {
+.page_line hr {
   height: 4px;
   background-color: #f7971c;
+  margin-top: -5px;	
 }
 
 /* Second Navigation styel -------------------------------------------------------------------------*/
 
 #secondNavList {
   font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 100;
   align-self: center;
 }
@@ -325,7 +355,7 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: -65px;
   margin-bottom: 50px;
 }
 
@@ -486,10 +516,88 @@ p {
   overflow: hidden;
 }
 
+	#break {
+		display: none;
+	}
+
+	.toplistingsaccordioncontent{
+		margin-top: 1%;
+	}
+
+#page_description{
+	margin-top: -2%;
+}
+
+	.toplistingsaccordioncontent{
+		margin-top: -1%;
+	}
+
+#page_introduction{
+	margin-top: -2%;
+}
+
+/* fixing margins ======================================================*/
+@media screen and (max-width: 1400px) {
+	#page_title{
+		font-size: 4vw;
+	}
+	#secondNavList {
+    font-size: 2.3vw;
+  }
+	
+	#page_description{
+		margin-top: -3%;
+		font-size: 1.2em;
+	}
+	
+}
+
+
+
 /* Media for toggle menu ======================================================*/
-@media screen and (max-width: 850px) {
-  .menu-display {
+@media screen and (max-width: 1000px) {
+
+	#page_title{
+		font-size: 2.5em;
+	}
+		
+	#break {
+		display: block;
+	}
+	
+	#dash{
+		display: none;
+	}
+	
+#secondNavList {
+    font-size: 1.3em;
+  }
+	
+	#page_description{
+		margin-top: -35px;
+		font-size: 1.2em;
+	}
+	
+	#menuItems{
+		font-size: 1.5vw;
+	}
+
+	.nav-menu-style {
+  padding: 10px 7px 10px 7px;
+  margin: 0px 7px 0 -17px;
+  position: relative;
+}
+}
+
+/* Media query for mobile mode================================================================ */
+@media screen and (max-width: 800px) {
+  .logo-box {
+    left: 10px;
+  }
+
+	  .menu-display {
     display: block;
+		  
   }
 
   .navbar nav {
@@ -528,14 +636,9 @@ p {
     background-color: #f7971c;
     text-decoration: underline;
   }
-}
-
-/* Media query for mobile mode================================================================ */
-@media screen and (max-width: 850px) {
-  .logo-box {
-    left: 10px;
-  }
-
+	
+	
+	
   #menu-button {
     top: 12px;
     right: 10px;
@@ -552,8 +655,8 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .toplistingstitle {
-    font-size: 1.5rem;
+  .toplistingsaccordionpanel {
+    font-size: 1.8rem;
   }
 
   .toplistingscard img {
@@ -570,18 +673,52 @@ p {
     font-size: 2.5rem;
   }
 
-  #page_description{
-    font-size:1.3rem ;
+  #page_description{	
+	  margin-top: -35px;
+		font-size: 1.2em;
+		padding: 0 1%;
   }
 
-  .card-title{
-    font-size: 1.5rem;
+  .toplistingstitle{
+    display: none;
   }
 
   .card img{
     border-radius: 15px;
     margin-top: 10px;
   }
+	.container{
+		width: 100%;
+		
+  height: 95vh;
+  
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+	}
+	
+  .card-title p{
+		font-size: 4vh;
+	}
+	
+	.page_line hr {
+  display: none;
+}
 
+	
+	#dash{
+		display: none;
+	}
+	
+	#break{
+		display: block;
+	}
+	
+	#footer {
+    font-size: .8em;
 }
 /* ====================End of Media query for mobile mode==================================== */
+}
