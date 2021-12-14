@@ -304,6 +304,8 @@ p {
   cursor: pointer;
 }
 
+
+
 /* page title style ------------------------------------------------------------------------------- */
 #page_title {
   color: #005c93;
@@ -471,6 +473,7 @@ p {
   font-family: "Tajawal", sans-serif, Arial, Helvetica;
   font-size: 1rem;
   color: #292929;
+	margin-bottom: 10%;
 }
 
 .toplistingscard .card-body a {
@@ -637,7 +640,7 @@ p {
 
   .header-menu-link:hover {
     background-color: #f7971c;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   #menu-button {
