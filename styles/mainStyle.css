@@ -168,11 +168,13 @@ nav ul li a:visited {
   position: relative;
 }
 
-/* Moble Menu botton and toggle menu style----------------------------------------------------- */
+
+
+/* Mobile Menu button and toggle menu style----------------------------------------------------- */
 
 #menu-button {
   border: none;
-
+	
   cursor: pointer;
   transition: 0.25s;
   z-index: 20;
@@ -180,7 +182,7 @@ nav ul li a:visited {
   background-color: #005c93;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 20%;
   position: relative;
 }
 
@@ -475,7 +477,7 @@ p {
   background-color: #005c93;
   color: #f7971c;
   font-family: "Roboto", sans-serif, Arial, Helvetica;
-  padding: 5px;
+  padding: 5px 12px 5px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
